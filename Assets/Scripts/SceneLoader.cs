@@ -15,6 +15,21 @@ public class SceneLoader : MonoBehaviour
 
     private bool sceneLoading = false;
 
+    private float escapeTime = 0f;
+
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            escapeTime += Time.deltaTime;
+            if (escapeTime >= 3.0f) Application.Quit();
+        }
+        else
+        {
+            escapeTime = 0f;
+        }
+    }
+
     private void Awake()
     {
         if (instance == null) { instance = this; DontDestroyOnLoad(gameObject); }
@@ -59,5 +74,9 @@ public class SceneLoader : MonoBehaviour
         visualGroup.SetActive(false);
     }
 
+    private void QuickEscape()
+    {
+
+    }
 
 }
