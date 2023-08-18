@@ -9,7 +9,8 @@ namespace _Cinemachince
     public class CameraMoveController : MonoBehaviour
     {
         // cinemachine freelook 변수
-        public CinemachineFreeLook _cinemachineFreeLook;
+        [SerializeField]
+        private CinemachineFreeLook _cinemachineFreeLook;
 
         private void Awake()
         {
@@ -24,12 +25,13 @@ namespace _Cinemachince
         private void Update()
         {
             // 입력이 들어올 경우, 마우스의 움직임에 따라 카메라를 움직이도록 만듦.
-            if (Input.GetMouseButton(1))
+            if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 _cinemachineFreeLook.m_XAxis.m_InputAxisName = "Mouse X";
                 _cinemachineFreeLook.m_YAxis.m_InputAxisName = "Mouse Y";
             }
-            else
+
+            if (Input.GetKeyUp(KeyCode.Mouse0))
             {
                 _cinemachineFreeLook.m_YAxis.m_InputAxisName = "";
                 _cinemachineFreeLook.m_XAxis.m_InputAxisName = "";

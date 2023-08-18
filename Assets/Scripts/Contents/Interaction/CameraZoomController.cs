@@ -8,23 +8,32 @@ namespace _Cinemachince
 {
     public class CameraZoomController : MonoBehaviour
     {
-        public CinemachineFreeLook _cinemachineFreeLook;
-        public float zoomSpeed;
+        [SerializeField]
+        private CinemachineFreeLook _cinemachineFreeLook;
+
+        [SerializeField]
+        private float zoomMultiply = 20f;
+        [SerializeField]
+        private float zoomDamping = 20f;
+
+        private float targetZoomFactor = 0f;
+
+        [SerializeField]
+        private float minZoom = 0f;
+        [SerializeField]
+        private float maxZoom = 1f;
 
         private void Awake()
         {
             // 변수 설정
             _cinemachineFreeLook = GetComponent<CinemachineFreeLook>();
-            zoomSpeed = 100f;
         }
 
         private void Update()
         {
             float scrollInput = Input.GetAxis("Mouse ScrollWheel");
-
-            // 마우스 스크롤을 통해 줌 인 및 줌 아웃
-            float current = _cinemachineFreeLook.m_YAxis.Value;
-            _cinemachineFreeLook.m_YAxis.Value += Mathf.Lerp(0, zoomSpeed * scrollInput, 0.5f) * Time.deltaTime;
+            targetZoomFactor = Mathf.Clamp(targetZoomFactor + -scrollInput * zoomMultiply, minZoom, maxZoom);
+            _cinemachineFreeLook.m_YAxis.Value = Mathf.Lerp(_cinemachineFreeLook.m_YAxis.Value, targetZoomFactor, zoomDamping * Time.deltaTime);
         }
     }
 }
