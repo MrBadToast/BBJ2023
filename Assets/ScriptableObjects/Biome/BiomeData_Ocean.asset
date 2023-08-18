@@ -10,25 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad675e621ed62f646b8d32c27bc52782, type: 3}
-  m_Name: BiomeData_Default
+  m_Name: BiomeData_Ocean
   m_EditorClassIdentifier: 
-  key: Default
+  key: Ocean
   icon: {fileID: 0}
   context: 
-  useSurfaceRange: 0
-  surfaceRangeType: 0
+  useSurfaceRange: 1
+  surfaceRangeType: 3
   surfaceRange:
     min: 0
-    max: 0
+    max: 0.7
   useHumidityRange: 0
-  humidityRangeType: 0
+  humidityRangeType: 2
   humidityRange:
     min: 0
     max: 0
   useTemperatureRange: 0
-  temperatureRangeType: 0
+  temperatureRangeType: 2
   temperatureRange:
     min: 0
     max: 0
-  enviromentPrefab: {fileID: 3930065634072869082, guid: 43cb9da81c3dc1640a79bd03da65fe76,
+  enviromentPrefab: {fileID: 5114588655837424368, guid: bc0bfbae627728348ad7900405f16830,
     type: 3}
