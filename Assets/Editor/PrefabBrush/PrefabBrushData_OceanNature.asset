@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d853f64d95923b044878725c082f95e7, type: 3}
+  m_Name: PrefabBrushData_OceanNature
+  m_EditorClassIdentifier: 
+  brushElementList:
+  - prefabObject: {fileID: 6184048164299910038, guid: fb0a9c4c9155b6f4bbd4e7d912c2e047, type: 3}
+    percent: 12.5
+  - prefabObject: {fileID: 3943484526594825314, guid: 8c14f9815d937844e84a00fa95dccdf2, type: 3}
+    percent: 12.5
+  - prefabObject: {fileID: 475560794245296502, guid: 4694696ac92588947812c84910f84424, type: 3}
+    percent: 12.5
+  - prefabObject: {fileID: 255744226177850424, guid: 339537e8f32b46848b182d15214c7363, type: 3}
+    percent: 12.5
+  - prefabObject: {fileID: 6603393000393112797, guid: 2234e27b8c0763049924589d4079804b, type: 3}
+    percent: 12.5
+  - prefabObject: {fileID: 4879738530816693486, guid: 890b7acd5310a1b409a802fd443d6efc, type: 3}
+    percent: 12.5
+  - prefabObject: {fileID: 364231320988086141, guid: 060a39c47cf19bf478cf6e7e3ddf11ef, type: 3}
+    percent: 12.5
+  - prefabObject: {fileID: 641702616696328728, guid: e8276d0a017ad354299460c7d698a321, type: 3}
+    percent: 12.5
+  - prefabObject: {fileID: 8391035849442650159, guid: 24c4e302db2aea147b25699de1bea6b1, type: 3}
+    percent: 12.5

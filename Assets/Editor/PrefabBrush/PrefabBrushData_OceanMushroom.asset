@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d853f64d95923b044878725c082f95e7, type: 3}
+  m_Name: PrefabBrushData_OceanMushroom
+  m_EditorClassIdentifier: 
+  brushElementList:
+  - prefabObject: {fileID: 5877090962844411265, guid: ce19063a539a72d4c8eea7646ac1804c, type: 3}
+    percent: 50
+  - prefabObject: {fileID: 3403843045337166595, guid: a5fb3959cd5bc814fb9dc5fd180f549b, type: 3}
+    percent: 50
