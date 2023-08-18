@@ -15,8 +15,8 @@ public class CreatureSpawner : MonoBehaviour
     private float spawnTimer;
 
     // Unity Events
-    public UnityEvent<CreatureScriptableObject> beforeSpawnCreature;
-    public UnityEvent<CreatureScriptableObject> afterSpawnCreature;
+    public UnityEvent<CreatureScriptableObject> beforeSpawnCreatureEvent;
+    public UnityEvent<GameObject> AfterSpawnCreatureEvent;
 
     private void Start()
     {
@@ -48,10 +48,10 @@ public class CreatureSpawner : MonoBehaviour
     {
         // Spawn할 생물을 선정
         CreatureScriptableObject spawnCreature = RandomUtility.Pickup(spawnProbability, creatures);
-        beforeSpawnCreature.Invoke(spawnCreature);
+        beforeSpawnCreatureEvent.Invoke(spawnCreature);
         
-        Instantiate(spawnCreature.creaturePrefab, spawnCreature.spawnPoint.transform.position, Quaternion.identity);
+        GameObject createdObject = Instantiate(spawnCreature.creaturePrefab, spawnCreature.spawnPoint.transform.position, Quaternion.identity);
         
-        afterSpawnCreature.Invoke(spawnCreature);
+        AfterSpawnCreatureEvent.Invoke(createdObject);
     }
 }
