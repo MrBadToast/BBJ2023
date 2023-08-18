@@ -8,6 +8,15 @@ using System.Linq;
 [CreateAssetMenu(fileName = "BiomeData", menuName = "Biome/BiomeData", order = 0)]
 public class BiomeData : ScriptableObject
 {
+    [System.Serializable]
+    public enum RangeType
+    {
+        None,
+        Smaller,
+        Range,
+        Larger,
+    }
+
     [SerializeField]
     private string key;
     public string Key => key;
@@ -19,30 +28,132 @@ public class BiomeData : ScriptableObject
     [SerializeField]
     [TextArea]
     private string context;
-    public string Context => context;   
-  
+    public string Context => context;
+
     [SerializeField]
-    private StatusInfo statusInfo;
-    public StatusInfo StatusInfo => statusInfo;
+    private bool useSurfaceRange = true;
+    public bool UseSurfaceRange => useSurfaceRange;
+
+    [SerializeField]
+    [ShowIf("useSurfaceRange")]
+    private RangeType surfaceRangeType;
+
+    [SerializeField]
+    [ShowIf("useSurfaceRange")]
+    private AmountRangeFloat surfaceRange;
+    public AmountRangeFloat SurfaceRange => surfaceRange;
+
+    [SerializeField]
+    private bool useHumidityRange = true;
+    public bool UseHumidityRange => useHumidityRange;
+
+    [SerializeField]
+    [ShowIf("useHumidityRange")]
+    private RangeType humidityRangeType;
+
+    [SerializeField]
+    [ShowIf("useHumidityRange")]
+    private AmountRangeFloat humidityRange;
+    public AmountRangeFloat HumidityRange => humidityRange;
+
+    [SerializeField]
+    private bool useTemperatureRange = true;
+    public bool UseTemperatureRange => useTemperatureRange;
+
+    [SerializeField]
+    [ShowIf("useTemperatureRange")]
+    private RangeType temperatureRangeType;
+
+    [SerializeField]
+    [ShowIf("useTemperatureRange")]
+    private AmountRangeFloat temperatureRange;
+    public AmountRangeFloat TemperatureRange => temperatureRange;
 
     [SerializeField]
     private GameObject enviromentPrefab;
     public GameObject EnviromentPrefab => enviromentPrefab;
 
-    [Button("AutoGenerate")]
-    public void AutoGenerate()
+
+    public bool ContainStatus(StatusInfo statusInfo)
     {
-        statusInfo.StatusDic.Clear();
-
-        IEnumerable<StatusType> StatusTypeList =
-                Enum.GetValues(typeof(StatusType)).Cast<StatusType>();
-
-        foreach (StatusType statusType in StatusTypeList)
+        if (useSurfaceRange)
         {
-            if (statusType == StatusType.None)
-                continue;
+            var surfaceAmount = statusInfo.GetElement(StatusType.Surface).CalculateTotalAmount();
 
-            statusInfo.StatusDic.Add(statusType, new StatusElement() { name = statusType.ToString(), type = statusType });
+            switch (surfaceRangeType)
+            {
+                case RangeType.None:
+                    break;
+                case RangeType.Smaller:
+                    if (surfaceAmount <= surfaceRange.min)
+                        break;
+                    else
+                        return false;
+                case RangeType.Range:
+                    if (surfaceRange.ContainExcusive(surfaceAmount))
+                        break;
+                    else
+                        return false;
+                case RangeType.Larger:
+                    if (surfaceAmount >= surfaceRange.max)
+                        break;
+                    else
+                        return false;
+            }
         }
+
+        if (useHumidityRange)
+        {
+            var humidityAmount = statusInfo.GetElement(StatusType.Humidity).CalculateTotalAmount();
+
+            switch (humidityRangeType)
+            {
+                case RangeType.None:
+                    break;
+                case RangeType.Smaller:
+                    if (humidityAmount <= surfaceRange.min)
+                        break;
+                    else
+                        return false;
+                case RangeType.Range:
+                    if (surfaceRange.ContainExcusive(humidityAmount))
+                        break;
+                    else
+                        return false;
+                case RangeType.Larger:
+                    if (humidityAmount >= surfaceRange.max)
+                        break;
+                    else
+                        return false;
+            }
+        }
+
+        if (useTemperatureRange)
+        {
+            var temperatureAmount = statusInfo.GetElement(StatusType.Temperature).CalculateTotalAmount();
+
+            switch (temperatureRangeType)
+            {
+                case RangeType.None:
+                    break;
+                case RangeType.Smaller:
+                    if (temperatureAmount <= surfaceRange.min)
+                        break;
+                    else
+                        return false;
+                case RangeType.Range:
+                    if (surfaceRange.ContainExcusive(temperatureAmount))
+                        break;
+                    else
+                        return false;
+                case RangeType.Larger:
+                    if (temperatureAmount >= surfaceRange.max)
+                        break;
+                    else
+                        return false;
+            }
+        }
+
+        return true;
     }
 }

@@ -32,6 +32,11 @@ public class AmountRangeInt
     public bool Contain(int value) { 
         return min <= value && value <= max;
     }
+
+    public bool ContainExcusive(int value)
+    {
+        return min <= value && value < max;
+    }
 }
 
 [System.Serializable]
@@ -62,6 +67,10 @@ public class AmountRangeFloat
     public bool Contain(float value)
     {
         return min <= value && value <= max;
+    }
+    public bool ContainExcusive(float value)
+    {
+        return min <= value && value < max;
     }
 }
 
