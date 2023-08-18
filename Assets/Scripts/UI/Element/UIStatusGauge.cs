@@ -13,11 +13,6 @@ public class UIStatusGauge : UIBaseGauge
 
     private StatusInfo statusInfo;
 
-    public virtual void UpdateStatusInfo(EntityStatus entityStatus)
-    {
-        UpdateStatusInfo(entityStatus.currentStatus);
-    }
-
     public virtual void UpdateStatusInfo(StatusInfo statusInfo)
     {
         this.statusInfo = statusInfo;
