@@ -18,8 +18,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Builds/LoadingScene.unity
     guid: d214c4e651a55e54da4f240ca5ae3b65
   - enabled: 1
-    path: Assets/Scenes/Builds/PlayScene.unity
-    guid: abd11e6b8f91699458e8a504a4de751c
+    path: Assets/Scenes/Devs/PlayScene_Lightings.unity
+    guid: 3bdc2aba877908c4daf1e085398792f7
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 4e8579b2aa475dd408e2c334f9a8fe8a,
       type: 2}

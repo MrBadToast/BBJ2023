@@ -33,7 +33,7 @@ public class UITitleView : UIBaseView
 
     public void EnterGame()
     {
-        SceneLoader.Instance.SwitchScene("PlayScene");
+        SceneLoader.Instance.SwitchScene("PlayScene_Lightings");
     }
 
     public void EnterCreadit() {

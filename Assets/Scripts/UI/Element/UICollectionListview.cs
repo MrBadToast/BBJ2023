@@ -9,10 +9,10 @@ public class UICollectionListview : UIListView<UICollectionSlot>
     private CollectionContainer collectionContainer;
 
     [SerializeField]
-    private GameObject infoPopup;
-    [SerializeField]
     private UIBaseText infoNameText;
+    [SerializeField]
     private UIBaseText infoDescriptionText;
+    [SerializeField]
     private UIBaseImage infoIconImage;
 
     public void Start()
@@ -35,30 +35,49 @@ public class UICollectionListview : UIListView<UICollectionSlot>
             keys.Remove(haveKey);
         }
 
+        bool isInitialized = false;
+
         foreach (var key in haveKeyList)
         {
             var content = AddContent();
             content.SetData(this, collectionContainer.DataTable[key], true);
+
+            if (!isInitialized)
+            {
+                content.OnSelect();
+                isInitialized = true;
+            }
+
         }
 
         foreach (var key in keys)
         {
             var content = AddContent();
             content.SetData(this, collectionContainer.DataTable[key], false);
+
+            if (!isInitialized)
+            {
+                content.OnSelect();
+                isInitialized = true;
+            }
         }
     }
 
-    public void ShowInfoPopup(Vector3 position, CreatureData creatureData)
+    public void ShowInfoPopup(Vector3 position, CreatureData creatureData, bool isHave)
     {
-        infoNameText.SetText(creatureData.CreatureName);
-        infoDescriptionText.SetText(creatureData.Context);
         infoIconImage.SetImage(creatureData.Icon);
+        if (isHave)
+        {
+            infoIconImage.SetColor(Color.white);
+            infoNameText.SetText(creatureData.CreatureName);
+            infoDescriptionText.SetText(creatureData.Context);
+        }
+        else
+        {
+            infoIconImage.SetColor(Color.black);
+            infoNameText.SetText("???");
+            infoDescriptionText.SetText("아직 확인되지 않았습니다.");
+        }
 
-        infoPopup.SetActive(true);
-    }
-
-    public void HideInfoPopup()
-    {
-        infoPopup.SetActive(false);
     }
 }
