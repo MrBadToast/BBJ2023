@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3a1e03ce0e62e0f4da2e9cfb75f5e1ae
+guid: 7ff4cfd41137573459e018de62e4ece1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,11 +123,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: firebear-Sheet_0
+      name: angmu-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -137,18 +137,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea759310117359549824176bfd63acc3
-      internalID: 2006563381
+      spriteID: 34bad126299d1da44ad0e695aa733166
+      internalID: -345223941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: firebear-Sheet_1
+      name: angmu-Sheet_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 96
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -158,18 +158,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bf9fd14fe5897246bdf9bfac07fdf43
-      internalID: 1200340768
+      spriteID: 4319ceef428b49d4ca14e335224ed0f1
+      internalID: 1454310942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: firebear-Sheet_2
+      name: angmu-Sheet_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 96
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -179,18 +179,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3675bcf9aa037844b9ab47c8d7c7042e
-      internalID: -775435689
+      spriteID: 48fa900e8c8a32249bcc073e7a8330c5
+      internalID: 289267286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: firebear-Sheet_3
+      name: angmu-Sheet_3
       rect:
         serializedVersion: 2
         x: 96
-        y: 96
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -200,59 +200,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b351841f2dd65b84084736b04aa33f57
-      internalID: -1861977583
+      spriteID: 87b346d6acc81cc4f8737437feeb86ac
+      internalID: 119552142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: firebear-Sheet_4
+      name: angmu-Sheet_4
       rect:
         serializedVersion: 2
         x: 128
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f7923b9687df5446ad89e30f5c041a0
-      internalID: 503532153
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: firebear-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17238169f129b9e4bb2912ad32d43772
-      internalID: 1204810670
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: firebear-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 0
         y: 64
         width: 32
         height: 32
@@ -263,77 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fbb563eb8a7a4240b7c006704283166
-      internalID: 1529154073
+      spriteID: 3caf0d5372fcab645b103cfc914a5a90
+      internalID: 1044263656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: firebear-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3bca1b5230fc51a4d9eb32503de40859
-      internalID: -782681834
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: firebear-Sheet_8
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b554892b306d664a99ab9bf15b94508
-      internalID: -1498611991
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: firebear-Sheet_9
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 95f8a33f09020b74a9a25fa1c1f8c574
-      internalID: 1908565651
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: firebear-Sheet_10
+      name: angmu-Sheet_5
       rect:
         serializedVersion: 2
         x: 0
@@ -347,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ac990cc445a34044b40e8081ce5d66d
-      internalID: 1888944649
+      spriteID: c070dce941e3dbd4abb276aeed3d8a6b
+      internalID: 714271476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: firebear-Sheet_11
+      name: angmu-Sheet_6
       rect:
         serializedVersion: 2
         x: 32
@@ -368,14 +263,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f1862538f76fd74b91f8a79d34464f9
-      internalID: -1257688149
+      spriteID: 72ff7794e2975b747b138462edbb9851
+      internalID: -1206774288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: firebear-Sheet_12
+      name: angmu-Sheet_7
       rect:
         serializedVersion: 2
         x: 64
@@ -389,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96ffb324521a3a845bac59e199bb9a7e
-      internalID: 1729709016
+      spriteID: 6cf0c82a1c17c034cab28b7a7552fd65
+      internalID: -1965195468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: firebear-Sheet_13
+      name: angmu-Sheet_8
       rect:
         serializedVersion: 2
         x: 96
@@ -410,14 +305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41870df0b4550ec4aabc044e3b1ded2b
-      internalID: 646226726
+      spriteID: 14dac4c3dcfd959469ddeda58aebed75
+      internalID: -2027606730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: firebear-Sheet_14
+      name: angmu-Sheet_9
       rect:
         serializedVersion: 2
         x: 128
@@ -431,14 +326,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b424906b7dd2c3440a01f01008a44dec
-      internalID: 1186387384
+      spriteID: bbeb9b1f4809dd84fb4749d3289bd08a
+      internalID: 1003159682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: firebear-Sheet_15
+      name: angmu-Sheet_10
       rect:
         serializedVersion: 2
         x: 160
@@ -452,14 +347,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e332d8c8c23f2bf468189029189bef2a
-      internalID: -1809774155
+      spriteID: 305cc7218700a414582f3cf2bd3b8076
+      internalID: -1691451771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: firebear-Sheet_16
+      name: angmu-Sheet_11
       rect:
         serializedVersion: 2
         x: 192
@@ -473,14 +368,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0fbd377d69310747b386cc8c13242f5
-      internalID: -1096463714
+      spriteID: 7b39a8969e88e5447884ffb85f3711b7
+      internalID: 54077292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: firebear-Sheet_17
+      name: angmu-Sheet_12
       rect:
         serializedVersion: 2
         x: 224
@@ -494,14 +389,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7486e34f4c2cdf243af8a8745b094f4a
-      internalID: -852941051
+      spriteID: 23c37bc8d49b29e4a82d06b859572a4c
+      internalID: 1457577416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: firebear-Sheet_18
+      name: angmu-Sheet_13
       rect:
         serializedVersion: 2
         x: 256
@@ -515,14 +410,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ffd5b6eee9bfc0428fb39369e9d0c85
-      internalID: -858988951
+      spriteID: 6ddb014383e617c4faee2721da35a837
+      internalID: 1633368608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: firebear-Sheet_19
+      name: angmu-Sheet_14
       rect:
         serializedVersion: 2
         x: 288
@@ -536,119 +431,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c23be0e1073c5b408cf76a0e34ed5f0
-      internalID: 451764968
+      spriteID: 41d19b5f81bac274997e427911de8ca2
+      internalID: -444255776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: firebear-Sheet_20
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6026cc19d5b8199428b0ad1898fd542a
-      internalID: -341250440
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: firebear-Sheet_21
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37f7e3bb02d12874c950f159215b7ded
-      internalID: -1161100871
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: firebear-Sheet_22
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2391ad6422f8b0540b56db86ac9c8f98
-      internalID: -1066121454
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: firebear-Sheet_23
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a5e08773200d9d43ad8615824c93690
-      internalID: -1751764397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: firebear-Sheet_24
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0750784a77ce65b44a046892fa139640
-      internalID: 199009820
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: firebear-Sheet_25
+      name: angmu-Sheet_15
       rect:
         serializedVersion: 2
         x: 0
@@ -662,14 +452,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81336214e1d925e489681e7dfa7c629e
-      internalID: 1842799697
+      spriteID: f7ae1751468e77349b51659ed599d43d
+      internalID: 1904429623
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: firebear-Sheet_26
+      name: angmu-Sheet_16
       rect:
         serializedVersion: 2
         x: 32
@@ -683,14 +473,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d3b575f527bd7d408c229344789c8bd
-      internalID: -2126592630
+      spriteID: 968b30523a98f76498d284ef92bd5108
+      internalID: 267486114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: firebear-Sheet_27
+      name: angmu-Sheet_17
       rect:
         serializedVersion: 2
         x: 64
@@ -704,50 +494,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37f8281b2dbcb94418fce6c6e2f716f1
-      internalID: 1728206830
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: firebear-Sheet_28
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42468d8d2bfe4984b9c211ec47312c82
-      internalID: -1622979131
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: firebear-Sheet_29
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d5141ce74452d664f9b61b07c06f5fd0
-      internalID: 47546498
+      spriteID: ecc75c9e0111b8c4e9d5c7c7d1c48419
+      internalID: -1619618323
       vertices: []
       indices: 
       edges: []
@@ -755,7 +503,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b14ca14bdc3086b44a2ca3885e5c306e
+    spriteID: 27b91d12bd7ea3049bb34704416fa340
     internalID: 0
     vertices: []
     indices: 
@@ -763,36 +511,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      firebear-Sheet_0: 2006563381
-      firebear-Sheet_1: 1200340768
-      firebear-Sheet_10: 1888944649
-      firebear-Sheet_11: -1257688149
-      firebear-Sheet_12: 1729709016
-      firebear-Sheet_13: 646226726
-      firebear-Sheet_14: 1186387384
-      firebear-Sheet_15: -1809774155
-      firebear-Sheet_16: -1096463714
-      firebear-Sheet_17: -852941051
-      firebear-Sheet_18: -858988951
-      firebear-Sheet_19: 451764968
-      firebear-Sheet_2: -775435689
-      firebear-Sheet_20: -341250440
-      firebear-Sheet_21: -1161100871
-      firebear-Sheet_22: -1066121454
-      firebear-Sheet_23: -1751764397
-      firebear-Sheet_24: 199009820
-      firebear-Sheet_25: 1842799697
-      firebear-Sheet_26: -2126592630
-      firebear-Sheet_27: 1728206830
-      firebear-Sheet_28: -1622979131
-      firebear-Sheet_29: 47546498
-      firebear-Sheet_3: -1861977583
-      firebear-Sheet_4: 503532153
-      firebear-Sheet_5: 1204810670
-      firebear-Sheet_6: 1529154073
-      firebear-Sheet_7: -782681834
-      firebear-Sheet_8: -1498611991
-      firebear-Sheet_9: 1908565651
+      angmu-Sheet_0: -345223941
+      angmu-Sheet_1: 1454310942
+      angmu-Sheet_10: -1691451771
+      angmu-Sheet_11: 54077292
+      angmu-Sheet_12: 1457577416
+      angmu-Sheet_13: 1633368608
+      angmu-Sheet_14: -444255776
+      angmu-Sheet_15: 1904429623
+      angmu-Sheet_16: 267486114
+      angmu-Sheet_17: -1619618323
+      angmu-Sheet_2: 289267286
+      angmu-Sheet_3: 119552142
+      angmu-Sheet_4: 1044263656
+      angmu-Sheet_5: 714271476
+      angmu-Sheet_6: -1206774288
+      angmu-Sheet_7: -1965195468
+      angmu-Sheet_8: -2027606730
+      angmu-Sheet_9: 1003159682
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
