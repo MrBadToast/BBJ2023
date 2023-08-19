@@ -10,6 +10,9 @@ public class CreatureController : MonoBehaviour
     private AmountRangeFloat lifeTimeRange;
     private float lifeTime;
 
+    // Animator
+    private Animator _animator;
+    
     public UnityEvent OnCreateEvent;
     public UnityEvent OnDestroyEvent;
 
@@ -21,6 +24,7 @@ public class CreatureController : MonoBehaviour
     private void Start()
     {
         OnCreateEvent.Invoke();
+        _animator = GetComponent<Animator>();
     }
 
     public void SetLifeTime(float lifeTime)
@@ -39,9 +43,14 @@ public class CreatureController : MonoBehaviour
         lifeTime -= Time.deltaTime;
     }
 
+    private void LateUpdate()
+    {
+        this.transform.LookAt(transform.position + Camera.main.transform.rotation * Vector3.forward, Camera.main.transform.rotation * Vector3.up);
+    }
+
     public void DestoryCreature()
     {
-        // TODO: Animation 추가
+        _animator.SetTrigger("deSpawn");
         Destroy(this.gameObject);
     }
 
