@@ -87,8 +87,10 @@ public class StatusElement
     public void AddAmount(float amount)
     {
         this.amount += amount;
-        this.amount = Mathf.Max(0, this.amount);
-        UpdateClampAmount();
+        if (isClamp)
+            UpdateClampAmount();
+        else
+            this.amount = Mathf.Max(0, this.amount);
         updateAmountAction?.Invoke(this.amount);
         updateCalculateAction?.Invoke(this.CalculateTotalAmount());
     }
@@ -96,8 +98,12 @@ public class StatusElement
     public void SubAmount(float amount)
     {
         this.amount -= amount;
-        this.amount = Mathf.Max(0, this.amount);
-        UpdateClampAmount();
+
+        if (isClamp)
+            UpdateClampAmount();
+        else
+            this.amount = Mathf.Max(0, this.amount);
+
         updateAmountAction?.Invoke(this.amount);
         updateCalculateAction?.Invoke(this.CalculateTotalAmount());
     }
@@ -105,17 +111,19 @@ public class StatusElement
     public void MultiplyAmount(float amount)
     {
         this.amount *= amount;
-        this.amount = Mathf.Max(0, this.amount);
-        UpdateClampAmount();
-        updateAmountAction?.Invoke(this.amount);
+        if (isClamp)
+            UpdateClampAmount();
+        else
+            updateAmountAction?.Invoke(this.amount);
         updateCalculateAction?.Invoke(this.CalculateTotalAmount());
     }
     public void DivideAmount(float amount)
     {
         this.amount /= amount;
-        this.amount = Mathf.Max(0, this.amount);
-        UpdateClampAmount();
-        updateAmountAction?.Invoke(this.amount);
+        if (isClamp)
+            UpdateClampAmount();
+        else
+            updateAmountAction?.Invoke(this.amount);
         updateCalculateAction?.Invoke(this.CalculateTotalAmount());
     }
 
