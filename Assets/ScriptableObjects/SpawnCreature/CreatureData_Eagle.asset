@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b14b15b540636741a0b8364777635df, type: 3}
   m_Name: CreatureData_Eagle
   m_EditorClassIdentifier: 
-  key: 
+  key: Eagle
   creatureName: "\uD770\uBA38\uB9AC\uC218\uB9AC"
   icon: {fileID: -1198689682, guid: 2d8157a149690fc49aa7ee1ab8a2682c, type: 3}
   context: "\uC6B8\uC74C\uC18C\uB9AC\uAC00 \u201C\uBBFC\uC8FC\uC8FC\uC758\u201D\uB85C

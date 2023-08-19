@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b14b15b540636741a0b8364777635df, type: 3}
   m_Name: CreatureData_Parakeet
   m_EditorClassIdentifier: 
-  key: 
+  key: Parakeet
   creatureName: "\uCCAD\uC0C8\uCE58"
   icon: {fileID: 0}
   context: "\uACE0\uAE30\uC57C, \uB0B4\uAC00 \uC8FD\uB294 \uADF8\uB0A0\uAE4C\uC9C0

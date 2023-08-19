@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b14b15b540636741a0b8364777635df, type: 3}
   m_Name: CreatureData_Arma
   m_EditorClassIdentifier: 
-  key: 
+  key: Arma
   creatureName: "\uC544\uB974\uB9C8\uB51C\uB85C"
   icon: {fileID: 787445954, guid: 53546a61055e01d459d8e71aaadeafbe, type: 3}
   context: "\uACBD\uC774\uB85C\uC6B4 \uAC11\uAC01\uC744 \uAC00\uC9C4 \uB3D9\uBB3C\uC785\uB2C8\uB2E4"

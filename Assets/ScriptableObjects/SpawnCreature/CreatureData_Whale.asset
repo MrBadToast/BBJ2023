@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b14b15b540636741a0b8364777635df, type: 3}
   m_Name: CreatureData_Whale
   m_EditorClassIdentifier: 
-  key: 
+  key: Whale
   creatureName: "\uD639\uB4F1\uACE0\uB798"
   icon: {fileID: 0}
   context: "\uC9C0\uAD6C\uC0C1\uC5D0\uC11C \uAC00\uC7A5 \uD06C\uACE0 \uADFC\uBA74\uD55C

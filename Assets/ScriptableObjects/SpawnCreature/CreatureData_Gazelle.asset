@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b14b15b540636741a0b8364777635df, type: 3}
   m_Name: CreatureData_Gazelle
   m_EditorClassIdentifier: 
-  key: 
+  key: Gazelle
   creatureName: "\uAC00\uC824"
   icon: {fileID: 0}
   context: "\uBAA9\uC774 \uAE38\uC5B4 \uC2AC\uD508 \uC9D0\uC2B9"

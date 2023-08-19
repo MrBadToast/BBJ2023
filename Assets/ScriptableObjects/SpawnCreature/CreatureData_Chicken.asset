@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b14b15b540636741a0b8364777635df, type: 3}
   m_Name: CreatureData_Chicken
   m_EditorClassIdentifier: 
-  key: 
+  key: Chicken
   creatureName: "\uB2ED"
   icon: {fileID: -2140399873, guid: 977baf147f9175b4fa0e286d40b89acd, type: 3}
   context: "\uC778\uAC04\uC5D0\uAC8C \uAC00\uC7A5 \uC0AC\uB791\uBC1B\uB294 \uAC00\uCD95\uC785\uB2C8\uB2E4"

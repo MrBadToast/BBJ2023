@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b14b15b540636741a0b8364777635df, type: 3}
   m_Name: CreatureData_Parrot
   m_EditorClassIdentifier: 
-  key: 
+  key: Parrot
   creatureName: "\uC655\uAD00 \uC575\uBB34"
   icon: {fileID: 714271476, guid: 7ff4cfd41137573459e018de62e4ece1, type: 3}
   context: "\uD55C\uBC88 \uC778\uC0AC\uD574\uBCF4\uC2E4\uB798\uC694?"

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b14b15b540636741a0b8364777635df, type: 3}
   m_Name: CreatureData_Penguin
   m_EditorClassIdentifier: 
-  key: 
+  key: Penguin
   creatureName: "\uC544\uB378\uB9AC \uD3AD\uADC4"
   icon: {fileID: -987859339, guid: c936d7755a47a22489c623068e6d4751, type: 3}
   context: "\uC544\uBB34\uB9AC \uCD94\uC6CC\uB3C4 \uC815\uC7A5\uC740 \uD3EC\uAE30\uD560
