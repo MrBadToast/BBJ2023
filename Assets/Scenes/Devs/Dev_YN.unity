@@ -28237,7 +28237,7 @@ MonoBehaviour:
       values:
       - type: 100
         name: Surface
-        amount: 0
+        amount: -1
         percent: 0
         isClamp: 1
         clampRange:
