@@ -13,6 +13,12 @@ public class StatusElement
     protected float amount;
     [SerializeField]
     protected float percent;
+    [SerializeField]
+    private bool isClamp = false;
+    [SerializeField]
+    [ShowIf("isClamp")]
+    private AmountRangeFloat clampRange;
+
 
     public UnityAction<float> updateAmountAction;
     public UnityAction<float> updatePercentAction;
@@ -38,8 +44,16 @@ public class StatusElement
         this.percent = copyElement.percent;
     }
 
-    public virtual float CalculateTotalAmount() { 
-        return amount + (amount * percent  * 0.01f);
+    public virtual float CalculateTotalAmount()
+    {
+        var calculateAmount = amount + (amount * percent * 0.01f);
+
+        if (isClamp)
+        {
+            calculateAmount = Clamp(calculateAmount);
+        }
+
+        return calculateAmount;
     }
 
     public virtual float CalculateTotalAmount(float origin)
@@ -65,13 +79,18 @@ public class StatusElement
     public void SetAmount(float amount)
     {
         this.amount = amount;
+        UpdateClampAmount();
         updateAmountAction?.Invoke(this.amount);
         updateCalculateAction?.Invoke(this.CalculateTotalAmount());
     }
 
-    public void AddAmount(float amount) {
+    public void AddAmount(float amount)
+    {
         this.amount += amount;
-        this.amount = Mathf.Max(0, this.amount);
+        if (isClamp)
+            UpdateClampAmount();
+        else
+            this.amount = Mathf.Max(0, this.amount);
         updateAmountAction?.Invoke(this.amount);
         updateCalculateAction?.Invoke(this.CalculateTotalAmount());
     }
@@ -79,7 +98,12 @@ public class StatusElement
     public void SubAmount(float amount)
     {
         this.amount -= amount;
-        this.amount = Mathf.Max(0, this.amount);
+
+        if (isClamp)
+            UpdateClampAmount();
+        else
+            this.amount = Mathf.Max(0, this.amount);
+
         updateAmountAction?.Invoke(this.amount);
         updateCalculateAction?.Invoke(this.CalculateTotalAmount());
     }
@@ -87,19 +111,24 @@ public class StatusElement
     public void MultiplyAmount(float amount)
     {
         this.amount *= amount;
-        this.amount = Mathf.Max(0, this.amount);
-        updateAmountAction?.Invoke(this.amount);
+        if (isClamp)
+            UpdateClampAmount();
+        else
+            updateAmountAction?.Invoke(this.amount);
         updateCalculateAction?.Invoke(this.CalculateTotalAmount());
     }
     public void DivideAmount(float amount)
     {
         this.amount /= amount;
-        this.amount = Mathf.Max(0, this.amount);
-        updateAmountAction?.Invoke(this.amount);
+        if (isClamp)
+            UpdateClampAmount();
+        else
+            updateAmountAction?.Invoke(this.amount);
         updateCalculateAction?.Invoke(this.CalculateTotalAmount());
     }
 
-    public float GetAmount() { 
+    public float GetAmount()
+    {
         return amount;
     }
 
@@ -142,5 +171,16 @@ public class StatusElement
     public float GetPercent()
     {
         return percent;
+    }
+
+    private void UpdateClampAmount()
+    {
+        if (isClamp)
+            this.amount = Clamp(this.amount);
+    }
+
+    private float Clamp(float amount)
+    {
+        return Mathf.Clamp(amount, clampRange.min, clampRange.max);
     }
 }

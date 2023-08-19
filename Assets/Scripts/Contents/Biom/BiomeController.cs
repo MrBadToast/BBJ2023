@@ -19,6 +19,8 @@ public class BiomeController : MonoBehaviour
 
     public void Show()
     {
+        Debug.Log($"Show Biome => {this.gameObject.name}");
+
         if (waitForEventCoroutine != null)
             StopCoroutine(waitForEventCoroutine);
 
@@ -29,10 +31,16 @@ public class BiomeController : MonoBehaviour
 
     public void Hide()
     {
+        Debug.Log($"Hide Biome => {this.gameObject.name}");
+
         if (waitForEventCoroutine != null)
             StopCoroutine(waitForEventCoroutine);
 
         beginHideEvent?.Invoke();
+        endHideEvent.AddListener(() =>
+        {
+            Destroy(this.gameObject);
+        });
         waitForEventCoroutine = StartCoroutine(WaitForEvent(hideTime, endHideEvent));
     }
 

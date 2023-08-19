@@ -6,26 +6,33 @@ using UnityEngine.Events;
 
 public class CreatureSpawner : MonoBehaviour
 {
+    [System.Serializable]
+    public class GroupData
+    {
+        public CreatureData creatureData;
+        public CreatureSpawnArea spawnArea;
+    }
+
     // 스폰을 위한 생물들의 데이터
-    public List<CreatureScriptableObject> creatures;
-    private List<float> spawnProbability;
+    public List<GroupData> creatureDataList;
+    private List<float> spawnProbabilityList;
 
     // spawn timer
     public float spawnTimerMax;
     private float spawnTimer;
 
     // Unity Events
-    public UnityEvent<CreatureScriptableObject> beforeSpawnCreatureEvent;
+    public UnityEvent<CreatureData> beforeSpawnCreatureEvent;
     public UnityEvent<GameObject> AfterSpawnCreatureEvent;
 
     private void Start()
     {
         spawnTimer = 1000f;
-        spawnProbability = new List<float>();
+        spawnProbabilityList = new List<float>();
 
-        foreach (var creature in creatures)
+        foreach (var creature in creatureDataList)
         {
-            spawnProbability.Add(creature.spawnProbability);
+            spawnProbabilityList.Add(creature.creatureData.SpawnProbability);
         }
 
         spawnTimer = spawnTimerMax;
@@ -47,11 +54,14 @@ public class CreatureSpawner : MonoBehaviour
     private void SpawnCreature()
     {
         // Spawn할 생물을 선정
-        CreatureScriptableObject spawnCreature = RandomUtility.Pickup(spawnProbability, creatures);
-        beforeSpawnCreatureEvent.Invoke(spawnCreature);
-        
-        GameObject createdObject = Instantiate(spawnCreature.creaturePrefab, spawnCreature.spawnPoint.transform.position, Quaternion.identity);
-        
+        GroupData groupData = RandomUtility.Pickup(spawnProbabilityList, creatureDataList);
+
+        var creatureData = groupData.creatureData;
+
+        beforeSpawnCreatureEvent.Invoke(creatureData);
+
+        GameObject createdObject = Instantiate(creatureData.CreaturePrefab, groupData.spawnArea.GetRandomPosition(), Quaternion.identity);
+
         AfterSpawnCreatureEvent.Invoke(createdObject);
     }
 }

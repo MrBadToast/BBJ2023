@@ -15,6 +15,9 @@ public class WorldController : MonoBehaviour
     private BiomeController biomeController;
 
     [SerializeField]
+    private List<MeshRenderer> groundMeshRendererList;
+
+    [SerializeField]
     private StatusInfo statusInfo;
 
     [SerializeField]
@@ -24,9 +27,23 @@ public class WorldController : MonoBehaviour
     public UnityEvent<StatusInfo> updateStatusEvent;
     public UnityEvent<BiomeData> changeBiomeEvent;
 
+
+    [SerializeField]
+    private float colorGroundLerpTime = 1f;
+    private MaterialPropertyBlock mpbGround;
+
+    private Coroutine updateGroundColor;
+
+    private void Awake()
+    {
+        mpbGround = new MaterialPropertyBlock();
+    }
+
     private void Start()
     {
         currentChangeBiomeTime = changeBiomeTime;
+
+        changeBiomeEvent.AddListener(ChangeGroundColor);
     }
 
     private void Update()
@@ -36,6 +53,7 @@ public class WorldController : MonoBehaviour
         if (currentChangeBiomeTime < 0f)
         {
             var resultBiome = biomeContainer.GetBiome(statusInfo);
+            Debug.Log($"Filter Biome Result {resultBiome}");
 
             if (resultBiome == null)
             {
@@ -47,10 +65,12 @@ public class WorldController : MonoBehaviour
                 biomeController.Hide();
 
                 //Biome Update
+                Debug.Log($"Change Biome => {resultBiome.Key}");
+
                 var biomeEnviroment = Instantiate(resultBiome.EnviromentPrefab);
                 biomeController = biomeEnviroment.GetComponent<BiomeController>();
                 biomeController.Show();
-
+                currentBiomeKey = resultBiome.Key;
                 changeBiomeEvent?.Invoke(resultBiome);
             }
 
@@ -70,6 +90,64 @@ public class WorldController : MonoBehaviour
         statusInfo.SubStatusInfo(subStatus);
 
         updateStatusEvent?.Invoke(statusInfo);
+    }
+
+    public void UpdateStatus(StatusInfo addStatus, StatusInfo subStatus)
+    {
+
+        statusInfo.AddStatusInfo(addStatus);
+        statusInfo.SubStatusInfo(subStatus);
+
+        updateStatusEvent?.Invoke(statusInfo);
+    }
+
+    [Button("¸Þ½¬ ·»´õ·¯ Å½»ö")]
+    private void AutoSetupMeshRenderers()
+    {
+        var meshRednerers = this.transform.GetComponentsInChildren<MeshRenderer>();
+
+        foreach (var meshRenderer in meshRednerers)
+        {
+            if (meshRenderer.gameObject.CompareTag("Ground"))
+            {
+                groundMeshRendererList.Add(meshRenderer);
+            }
+        }
+    }
+
+    public void ChangeGroundColor(BiomeData biomeData)
+    {
+        if (updateGroundColor != null)
+            StopCoroutine(updateGroundColor);
+
+        updateGroundColor = StartCoroutine(UpdateGroundColor(biomeData));
+    }
+
+    private IEnumerator UpdateGroundColor(BiomeData biomeData)
+    {
+        var startWet = groundMeshRendererList[0].sharedMaterial.GetFloat("_GrassWetness");
+        var startSnow = groundMeshRendererList[0].sharedMaterial.GetFloat("_SnowAmount");
+        var startSand = groundMeshRendererList[0].sharedMaterial.GetFloat("_SandAmount");
+
+
+        var lerpTime = 0f;
+        while (lerpTime < colorGroundLerpTime)
+        {
+            lerpTime += Time.deltaTime;
+            var lerpWet = Mathf.Lerp(startWet, biomeData.WetAmount, lerpTime / colorGroundLerpTime);
+            var lerpSnow = Mathf.Lerp(startSnow, biomeData.SnowAmount, lerpTime / colorGroundLerpTime);
+            var lerpSand = Mathf.Lerp(startSand, biomeData.SandAmount, lerpTime / colorGroundLerpTime);
+
+            mpbGround.SetFloat("_GrassWetness", lerpWet);
+            mpbGround.SetFloat("_SnowAmount", lerpSnow);
+            mpbGround.SetFloat("_SandAmount", lerpSand);
+
+            foreach (var renderer in groundMeshRendererList)
+            {
+                renderer.SetPropertyBlock(mpbGround);
+            }
+            yield return null;
+        }
     }
 
 }
