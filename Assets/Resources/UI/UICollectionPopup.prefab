@@ -329,6 +329,8 @@ MonoBehaviour:
   contentList: []
   collectionContainer: {fileID: 11400000, guid: 002a9afb537722d44a9664d549e5ba67,
     type: 2}
+  infoPopup: {fileID: 0}
+  infoNameText: {fileID: 0}
 --- !u!1 &3102806594779054387
 GameObject:
   m_ObjectHideFlags: 0
@@ -1135,21 +1137,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UISettingPopup, Assembly-CSharp
+      - m_Target: {fileID: 6071964835072165231}
+        m_TargetAssemblyTypeName: UIBasePopup, Assembly-CSharp
         m_MethodName: Close
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SFXPlayer, Assembly-CSharp
-        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
