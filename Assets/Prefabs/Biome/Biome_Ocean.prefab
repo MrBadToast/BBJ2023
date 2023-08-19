@@ -138,11 +138,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eddab1458d4a8a41897da1081d063a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  creatureDataList: []
+  creatureDataList:
+  - creatureData: {fileID: 11400000, guid: f33d0ed168667a04089ae836deee9a2b, type: 2}
+    spawnArea: {fileID: 3629404305556658483}
   spawnTimeRange:
     min: 5
     max: 10
-  maxNumOfSpawnedCreature: 0
+  maxNumOfSpawnedCreature: 5
   beforeSpawnCreatureEvent:
     m_PersistentCalls:
       m_Calls: []

@@ -190,6 +190,10 @@ MonoBehaviour:
     spawnArea: {fileID: 8083543346586292834}
   - creatureData: {fileID: 11400000, guid: 0748df7f49d09634d8f74423c16b90cc, type: 2}
     spawnArea: {fileID: 8083543346586292834}
+  - creatureData: {fileID: 11400000, guid: cce1d93dcdb9e4f4cb80cad9c64372a0, type: 2}
+    spawnArea: {fileID: 5692012996124059599}
+  - creatureData: {fileID: 11400000, guid: 1bf8f17e753eb2c47a654b58c04a1fb4, type: 2}
+    spawnArea: {fileID: 8083543346586292834}
   spawnTimeRange:
     min: 5
     max: 10
