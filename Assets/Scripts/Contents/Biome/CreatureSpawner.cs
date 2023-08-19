@@ -22,7 +22,10 @@ public class CreatureSpawner : MonoBehaviour
     private AmountRangeFloat spawnTimeRange;
 
     private float spawnTimer;
-
+    
+    // Number of Spawned Creature
+    private int _numOfSpawnedCreature;
+    
     // Unity Events
     public UnityEvent<CreatureData> beforeSpawnCreatureEvent;
     public UnityEvent<GameObject> AfterSpawnCreatureEvent;
@@ -57,13 +60,24 @@ public class CreatureSpawner : MonoBehaviour
     {
         // Spawn할 생물을 선정
         GroupData groupData = RandomUtility.Pickup(spawnProbabilityList, creatureDataList);
-
+        
         var creatureData = groupData.creatureData;
 
         beforeSpawnCreatureEvent.Invoke(creatureData);
 
         GameObject createdObject = Instantiate(creatureData.CreaturePrefab, groupData.spawnArea.GetRandomPosition(), Quaternion.identity);
 
+        ++_numOfSpawnedCreature;
+        createdObject.GetComponent<CreatureController>().OnDestroyEvent.AddListener(() =>
+        {
+            RemovedCreature();
+        });
+        
         AfterSpawnCreatureEvent.Invoke(createdObject);
+    }
+
+    public void RemovedCreature()
+    {
+        --_numOfSpawnedCreature;
     }
 }
