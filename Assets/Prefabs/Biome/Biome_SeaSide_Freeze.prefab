@@ -94,6 +94,69 @@ MonoBehaviour:
   spawnAreaSize: {x: 3, y: 1.5, z: 1}
   useSnapFloor: 0
   areaColor: {r: 0, g: 0.37633944, b: 1, a: 0.39215687}
+--- !u!1 &5913061056392363035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7737610622396396250}
+  - component: {fileID: 2869444282300655130}
+  m_Layer: 0
+  m_Name: NaturalSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7737610622396396250
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913061056392363035}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2364430889481909759}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2869444282300655130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913061056392363035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eddab1458d4a8a41897da1081d063a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatureDataList:
+  - creatureData: {fileID: 11400000, guid: e37d88c861488454c8b0dfdee79789b0, type: 2}
+    spawnArea: {fileID: 8607942974683727800}
+  - creatureData: {fileID: 11400000, guid: 8154ecb822b38f2458b841918a27c35c, type: 2}
+    spawnArea: {fileID: 8607942974683727800}
+  spawnTimeRange:
+    min: 3
+    max: 5
+  maxNumOfSpawnedCreature: 30
+  beforeSpawnCreatureEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  AfterSpawnCreatureEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  spawnEffect: {fileID: 3405140234659635900, guid: 5a931b1618b057a439b726be93d101d1,
+    type: 3}
+  destorySFXPlayer: {fileID: 1133932875261127371, guid: 251d5f14b63a8d548a3926cffc3e698a,
+    type: 3}
 --- !u!1 &7292090551739592525
 GameObject:
   m_ObjectHideFlags: 0
@@ -125,6 +188,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4123234024543959168}
+  - {fileID: 7737610622396396250}
   - {fileID: 4972581751951407032}
   - {fileID: 2359141083611147609}
   - {fileID: 6014837607915591999}

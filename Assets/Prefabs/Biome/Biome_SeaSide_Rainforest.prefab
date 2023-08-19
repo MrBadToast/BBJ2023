@@ -141,12 +141,6 @@ MonoBehaviour:
   creatureDataList:
   - creatureData: {fileID: 11400000, guid: fc6cc0c9eca869444879260ac736e74c, type: 2}
     spawnArea: {fileID: 7258635645745568992}
-  - creatureData: {fileID: 11400000, guid: 2097cec2308c88249a31139f2e4ab1a8, type: 2}
-    spawnArea: {fileID: 4090651941091905238}
-  - creatureData: {fileID: 11400000, guid: 2097cec2308c88249a31139f2e4ab1a8, type: 2}
-    spawnArea: {fileID: 4090651941091905238}
-  - creatureData: {fileID: 11400000, guid: 109c7031053221e478f14a91488c0d6f, type: 2}
-    spawnArea: {fileID: 4090651941091905238}
   spawnTimeRange:
     min: 3
     max: 6
@@ -208,6 +202,75 @@ MonoBehaviour:
   spawnAreaSize: {x: 3, y: 0.5, z: 3}
   useSnapFloor: 1
   areaColor: {r: 0.25289202, g: 1, b: 0, a: 0.39215687}
+--- !u!1 &5785554966240527792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5404473629111541873}
+  - component: {fileID: 3367910328764487419}
+  m_Layer: 0
+  m_Name: NaturalSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5404473629111541873
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5785554966240527792}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2364430889481909759}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3367910328764487419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5785554966240527792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eddab1458d4a8a41897da1081d063a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatureDataList:
+  - creatureData: {fileID: 11400000, guid: e37d88c861488454c8b0dfdee79789b0, type: 2}
+    spawnArea: {fileID: 4090651941091905238}
+  - creatureData: {fileID: 11400000, guid: 8154ecb822b38f2458b841918a27c35c, type: 2}
+    spawnArea: {fileID: 4090651941091905238}
+  - creatureData: {fileID: 11400000, guid: fb7af0d0ac8538c4885e52a816e36590, type: 2}
+    spawnArea: {fileID: 4090651941091905238}
+  - creatureData: {fileID: 11400000, guid: cf2a372abd97e01489ca9a66cfd2c3ec, type: 2}
+    spawnArea: {fileID: 4090651941091905238}
+  - creatureData: {fileID: 11400000, guid: 1cfe2b4e99264e04f8fa7639798c4d6b, type: 2}
+    spawnArea: {fileID: 4090651941091905238}
+  spawnTimeRange:
+    min: 3
+    max: 5
+  maxNumOfSpawnedCreature: 30
+  beforeSpawnCreatureEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  AfterSpawnCreatureEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  spawnEffect: {fileID: 3405140234659635900, guid: 5a931b1618b057a439b726be93d101d1,
+    type: 3}
+  destorySFXPlayer: {fileID: 1133932875261127371, guid: 251d5f14b63a8d548a3926cffc3e698a,
+    type: 3}
 --- !u!1 &7292090551739592525
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,6 +302,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 42261556354138584}
+  - {fileID: 5404473629111541873}
   - {fileID: 4885906003421145094}
   - {fileID: 875992537207307243}
   - {fileID: 8033191454122868503}
