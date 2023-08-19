@@ -8,4 +8,16 @@ public class UIPausePopup : UIBasePopup
     {
 
     }
+
+    public override void BeginOpen()
+    {
+        Time.timeScale = 0f;
+        base.BeginOpen();
+    }
+
+    public override void EndClose()
+    {
+        base.EndClose();
+        Time.timeScale = 1f;
+    }
 }
