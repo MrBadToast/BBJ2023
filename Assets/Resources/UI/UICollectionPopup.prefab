@@ -64,15 +64,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
+    m_Left: 50
+    m_Right: 50
+    m_Top: 50
+    m_Bottom: 50
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 0, y: 0}
+  m_CellSize: {x: 125, y: 125}
+  m_Spacing: {x: 50, y: 50}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!1 &1324547558715773202
@@ -327,7 +327,8 @@ MonoBehaviour:
   contentPrefab: {fileID: 2058326595719256943, guid: 2bcfa77a68732d14791eb62ed69b00b8,
     type: 3}
   contentList: []
-  collectionContainer: {fileID: 0}
+  collectionContainer: {fileID: 11400000, guid: 002a9afb537722d44a9664d549e5ba67,
+    type: 2}
 --- !u!1 &3102806594779054387
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,7 +464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -656,7 +657,9 @@ MonoBehaviour:
   openAnimatorElementList:
   - tweenKey: Open
     tweenAnimator: {fileID: 7270979322258553636}
-  closeAnimatorElementList: []
+  closeAnimatorElementList:
+  - tweenKey: Close
+    tweenAnimator: {fileID: 7270979322258553636}
   beginOpenEvent:
     m_PersistentCalls:
       m_Calls: []
