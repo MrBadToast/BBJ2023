@@ -170,7 +170,7 @@ public class WorldController : MonoBehaviour
 
     private IEnumerator UpdateWaterLevel(float height)
     {
-        var startWet = groundMeshRendererList[0].sharedMaterial.GetFloat("_WaterLevel");
+        var startWet = groundMeshRendererList[0].sharedMaterial.GetFloat("_Waterlevel");
 
         var lerpTime = 0f;
         while (lerpTime < waterLevelLerpTime)
@@ -178,7 +178,7 @@ public class WorldController : MonoBehaviour
             lerpTime += Time.deltaTime;
             var lerpWaterLevel = Mathf.Lerp(startWet, height, lerpTime / waterLevelLerpTime);
 
-            mpbGround.SetFloat("_WaterLevel", lerpWaterLevel);
+            mpbGround.SetFloat("_Waterlevel", lerpWaterLevel);
 
             foreach (var renderer in groundMeshRendererList)
             {

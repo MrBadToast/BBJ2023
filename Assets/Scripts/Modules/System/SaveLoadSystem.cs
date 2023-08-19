@@ -102,4 +102,19 @@ public class SaveLoadSystem : Singleton<SaveLoadSystem>
         return success;
     }
 
+    public void AddCollection(string key)
+    {
+        if (SaveLoadData.collectionKeyList.Contains(key))
+            return;
+
+        SaveLoadData.collectionKeyList.Add(key);
+        Save();
+    }
+
+    public void ClearCollection()
+    {
+        SaveLoadData.collectionKeyList.Clear();
+        Save();
+    }
+
 }
