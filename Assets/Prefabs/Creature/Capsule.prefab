@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3160183759712424565}
   - component: {fileID: 1488541049173405645}
+  - component: {fileID: 5679036176078386225}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.1983714, y: -6.1715517, z: 7.9817553}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -85,3 +86,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5679036176078386225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4536786194902892289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380e1a398b4fda942a91fb512f26e419, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animatorName: 
+  animationTable:
+    keys:
+    - DeSpawn
+    - Spawn
+    values:
+    - animationList:
+      - {fileID: 11400000, guid: c5ea7269f1a8cd3488dc4e622199825b, type: 2}
+      - {fileID: 11400000, guid: 4db05fd71a3a1004690cc7bfb1ecaf89, type: 2}
+    - animationList:
+      - {fileID: 11400000, guid: f0a559a63c3256946b56af17bd6488c3, type: 2}
+      - {fileID: 11400000, guid: 90d88ee26d7cb3a4b85eb6f6a8bc98f9, type: 2}
+  completeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  stopEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  stopActionType: 0
+  autoActiveByPlay: 0
+  autoStartPlay: 0
+  resetOriginTransformByPlay: 0
+  resetOriginColorByPlay: 0
+  resetOriginTransformByStop: 0
+  resetOriginColorByStop: 0
+  ignoreTimeScaled: 0

@@ -57,6 +57,10 @@ MonoBehaviour:
   AfterSpawnCreatureEvent:
     m_PersistentCalls:
       m_Calls: []
+  spawnEffect: {fileID: 3405140234659635900, guid: 5a931b1618b057a439b726be93d101d1,
+    type: 3}
+  destorySFXPlayer: {fileID: 1133932875261127371, guid: 251d5f14b63a8d548a3926cffc3e698a,
+    type: 3}
 --- !u!1 &2168166548864080979
 GameObject:
   m_ObjectHideFlags: 0

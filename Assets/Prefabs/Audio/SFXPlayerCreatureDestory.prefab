@@ -48,7 +48,7 @@ MonoBehaviour:
   audioSource: {fileID: 5549253774142331355}
   audioClipKey: 
   volume: 0.5
-  aliveSceneChange: 0
+  aliveSceneChange: 1
   autoPlay: 1
   isLoop: 0
   autoDestroy: 1
