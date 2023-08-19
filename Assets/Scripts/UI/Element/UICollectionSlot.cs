@@ -21,7 +21,7 @@ public class UICollectionSlot : MonoBehaviour
         iconImage.SetImage(creatureData.Icon);
         if (!isShow)
         {
-            iconImage.SetColor(Color.white);
+            iconImage.SetColor(Color.black);
             nameText.SetText("???");
         }
         else
