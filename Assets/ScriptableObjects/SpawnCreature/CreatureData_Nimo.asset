@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b14b15b540636741a0b8364777635df, type: 3}
-  m_Name: ParakeetData
+  m_Name: CreatureData_Nimo
   m_EditorClassIdentifier: 
   key: 
-  creatureName: "\uCCAD\uC0C8\uCE58"
-  icon: {fileID: 0}
-  context: "\uACE0\uAE30\uC57C, \uB0B4\uAC00 \uC8FD\uB294 \uADF8\uB0A0\uAE4C\uC9C0
-    \uD568\uAED8 \uC788\uC73C\uB9C8."
-  creaturePrefab: {fileID: 0}
+  creatureName: "\uD770\uB3D9\uAC00\uB9AC "
+  icon: {fileID: -1842198990, guid: 9b6824fba882414479e4379307739265, type: 3}
+  context: "\uC601\uD654\uC5D0 \uB098\uC628 \"\uADF8\uAC70\" \uB9DE\uC2B5\uB2C8\uB2E4"
+  creaturePrefab: {fileID: 3388496246050979781, guid: 79fb2bf098bd59d478f7f3e0f1b6bde0,
+    type: 3}
   spawnProbability: 0

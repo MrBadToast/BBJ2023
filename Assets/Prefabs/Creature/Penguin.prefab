@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4446941673876924890}
   - component: {fileID: 2816741285902781120}
   - component: {fileID: 527181374902600780}
+  - component: {fileID: 1341095541928944833}
   m_Layer: 0
   m_Name: Penguin
   m_TagString: Untagged
@@ -129,3 +130,16 @@ MonoBehaviour:
   OnDestroyEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1341095541928944833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4868955540420193132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830c985b6a68b034da51a6b540f2029f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatureData: {fileID: 11400000, guid: 6e9cc8c037d95f546833ed315f83dd46, type: 2}

@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b14b15b540636741a0b8364777635df, type: 3}
-  m_Name: CreatureData_Dev1
+  m_Name: CreatureData_Fox
   m_EditorClassIdentifier: 
   key: 
-  icon: {fileID: 0}
-  context: 
-  creaturePrefab: {fileID: 1777789055597359463, guid: 89362aacc8275a24ba3f38ff9a131c0a,
+  creatureName: "\uBD89\uC740 \uC5EC\uC6B0"
+  icon: {fileID: -1680954624, guid: 92565ec1adc0c5c438096397a018d3ef, type: 3}
+  context: "\uD558\uD2F0\uD558\uD2F0\uD558\uD2F0\uD638"
+  creaturePrefab: {fileID: 4527390123600297730, guid: 1473bbf31f8e9304f856a9a787f9da03,
     type: 3}
-  spawnProbability: 20
+  spawnProbability: 0

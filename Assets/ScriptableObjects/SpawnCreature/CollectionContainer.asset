@@ -13,5 +13,27 @@ MonoBehaviour:
   m_Name: CollectionContainer
   m_EditorClassIdentifier: 
   dataTable:
-    keys: []
-    values: []
+    keys:
+    - Arma
+    - Bear
+    - Chicken
+    - Eagle
+    - Fox
+    - Gazelle
+    - Nimo
+    - Parakeet
+    - Parrot
+    - Penguin
+    - Whale
+    values:
+    - {fileID: 11400000, guid: aea15a99efcd3354aac03c087c2d7b72, type: 2}
+    - {fileID: 11400000, guid: 0b1a82fe2be26e74496ccd174a6f33c3, type: 2}
+    - {fileID: 11400000, guid: ac517a422fbd28549a57b4a025db16e0, type: 2}
+    - {fileID: 11400000, guid: cce1d93dcdb9e4f4cb80cad9c64372a0, type: 2}
+    - {fileID: 11400000, guid: 0748df7f49d09634d8f74423c16b90cc, type: 2}
+    - {fileID: 11400000, guid: fe7230cb930faca489546bd4f671c6a4, type: 2}
+    - {fileID: 11400000, guid: f33d0ed168667a04089ae836deee9a2b, type: 2}
+    - {fileID: 11400000, guid: 86533e6d8cebe534c94755dbfabe3b4c, type: 2}
+    - {fileID: 11400000, guid: fc6cc0c9eca869444879260ac736e74c, type: 2}
+    - {fileID: 11400000, guid: 6e9cc8c037d95f546833ed315f83dd46, type: 2}
+    - {fileID: 11400000, guid: cf7d0f68651f24f409d221316a47b538, type: 2}

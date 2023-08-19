@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5361742117904934198}
   - component: {fileID: 2559924604194952272}
   - component: {fileID: 5208811667755256159}
+  - component: {fileID: 7368619065842012277}
   m_Layer: 0
   m_Name: Chicken
   m_TagString: Untagged
@@ -83,7 +84,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &2559924604194952272
@@ -129,3 +130,16 @@ MonoBehaviour:
   OnDestroyEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7368619065842012277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7577047527660557917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830c985b6a68b034da51a6b540f2029f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatureData: {fileID: 11400000, guid: ac517a422fbd28549a57b4a025db16e0, type: 2}

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b14b15b540636741a0b8364777635df, type: 3}
-  m_Name: CreatureData_Dev
+  m_Name: CreatureData_Gazelle
   m_EditorClassIdentifier: 
   key: 
+  creatureName: "\uAC00\uC824"
   icon: {fileID: 0}
-  context: 
-  creaturePrefab: {fileID: 6445622947902219334, guid: 5126d16094322f942903ca64acb5fb10,
-    type: 3}
-  spawnProbability: 20
+  context: "\uBAA9\uC774 \uAE38\uC5B4 \uC2AC\uD508 \uC9D0\uC2B9"
+  creaturePrefab: {fileID: 0}
+  spawnProbability: 0

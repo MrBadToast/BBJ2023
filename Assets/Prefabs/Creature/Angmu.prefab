@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3052738662911888367}
   - component: {fileID: 5673198532934914746}
   - component: {fileID: 8546155601805878697}
+  - component: {fileID: 2693759398966443484}
   m_Layer: 0
   m_Name: Angmu
   m_TagString: Untagged
@@ -129,3 +130,16 @@ MonoBehaviour:
   OnDestroyEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2693759398966443484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7442217095032302871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830c985b6a68b034da51a6b540f2029f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatureData: {fileID: 11400000, guid: fc6cc0c9eca869444879260ac736e74c, type: 2}

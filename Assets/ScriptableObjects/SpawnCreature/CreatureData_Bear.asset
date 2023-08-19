@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b14b15b540636741a0b8364777635df, type: 3}
-  m_Name: GazelleData
+  m_Name: CreatureData_Bear
   m_EditorClassIdentifier: 
   key: 
-  creatureName: "\uAC00\uC824"
-  icon: {fileID: 0}
-  context: "\uBAA9\uC774 \uAE38\uC5B4 \uC2AC\uD508 \uC9D0\uC2B9"
-  creaturePrefab: {fileID: 0}
+  creatureName: "\uBD88\uACF0"
+  icon: {fileID: 1529154073, guid: 3a1e03ce0e62e0f4da2e9cfb75f5e1ae, type: 3}
+  context: "\uACF0\uC740 \uC0AC\uB78C\uC744 \uCC22\uC5B4"
+  creaturePrefab: {fileID: 558857705754445637, guid: de803e8bf1fbd6448af5ab0688f4215a,
+    type: 3}
   spawnProbability: 0

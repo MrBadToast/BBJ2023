@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8906326361523084080}
   - component: {fileID: 8893198823645448697}
   - component: {fileID: 1493363231363861601}
+  - component: {fileID: 8147265026707882724}
   m_Layer: 0
   m_Name: Nimo
   m_TagString: Untagged
@@ -129,3 +130,16 @@ MonoBehaviour:
   OnDestroyEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8147265026707882724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3388496246050979781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830c985b6a68b034da51a6b540f2029f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatureData: {fileID: 11400000, guid: f33d0ed168667a04089ae836deee9a2b, type: 2}
