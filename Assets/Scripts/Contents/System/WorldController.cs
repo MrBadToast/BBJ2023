@@ -106,6 +106,12 @@ public class WorldController : MonoBehaviour
         updateStatusEvent?.Invoke(statusInfo);
     }
 
+    [Button("강제 능력치 업데이트 이벤트 호출")]
+    private void ForcedInvokeUpdateStateEvent()
+    {
+        updateStatusEvent?.Invoke(statusInfo);
+    }
+
     [Button("메쉬 렌더러 탐색")]
     private void AutoSetupMeshRenderers()
     {
