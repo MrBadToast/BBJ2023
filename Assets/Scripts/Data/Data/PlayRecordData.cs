@@ -14,4 +14,5 @@ public class PlayRecordData
     public Vector2Int screenResolution = new Vector2Int(1920, 1080);
     public FullScreenMode screenMode = FullScreenMode.FullScreenWindow;
 
+    public List<string> collectionKeyList = new List<string>();
 }
