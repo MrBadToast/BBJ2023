@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: Arma
   creatureName: "\uC544\uB974\uB9C8\uB51C\uB85C"
-  icon: {fileID: 787445954, guid: 53546a61055e01d459d8e71aaadeafbe, type: 3}
-  context: "\uACBD\uC774\uB85C\uC6B4 \uAC11\uAC01\uC744 \uAC00\uC9C4 \uB3D9\uBB3C\uC785\uB2C8\uB2E4"
+  icon: {fileID: 1693511634, guid: 53546a61055e01d459d8e71aaadeafbe, type: 3}
+  context: "\uACBD\uC774\uB85C\uC6B4 \uAC11\uAC01\uC744 \uAC00\uC9C4 \uB3D9\uBB3C\uC785\uB2C8\uB2E4."
   creaturePrefab: {fileID: 2227442760773112448, guid: ad521239acbe71642b1cb736e7d60a52,
     type: 3}
   spawnProbability: 0
