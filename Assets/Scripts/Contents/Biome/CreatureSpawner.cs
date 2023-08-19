@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -31,6 +32,9 @@ public class CreatureSpawner : MonoBehaviour
     public UnityEvent<CreatureData> beforeSpawnCreatureEvent;
     public UnityEvent<GameObject> AfterSpawnCreatureEvent;
 
+    // Prefabs
+    [SerializeField] private GameObject spawnEffect;
+    [SerializeField] private GameObject destorySFXPlayer;
     private void Start()
     {
         spawnTimer = 1000f;
@@ -68,13 +72,21 @@ public class CreatureSpawner : MonoBehaviour
         var creatureData = groupData.creatureData;
 
         beforeSpawnCreatureEvent.Invoke(creatureData);
-
+        Vector3 spawnPoint = groupData.spawnArea.GetRandomPosition();
         GameObject createdObject = Instantiate(creatureData.CreaturePrefab, groupData.spawnArea.GetRandomPosition(), Quaternion.identity);
 
+        createdObject.GetComponent<CreatureController>().OnCreateEvent.AddListener(() =>
+        {
+            if (spawnEffect != null)
+            {
+                Instantiate(spawnEffect, spawnPoint, Quaternion.identity);
+            }
+        });
         ++_numOfSpawnedCreature;
+        createdObject.GetComponent<CreatureController>().OnDestroyEvent.AddListener(RemovedCreature);
         createdObject.GetComponent<CreatureController>().OnDestroyEvent.AddListener(() =>
         {
-            RemovedCreature();
+            Instantiate(destorySFXPlayer, this.transform);
         });
         
         AfterSpawnCreatureEvent.Invoke(createdObject);
