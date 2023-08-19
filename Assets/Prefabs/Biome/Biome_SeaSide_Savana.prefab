@@ -206,7 +206,7 @@ MonoBehaviour:
   spawnTimeRange:
     min: 5
     max: 10
-  maxNumOfSpawnedCreature: 0
+  maxNumOfSpawnedCreature: 5
   beforeSpawnCreatureEvent:
     m_PersistentCalls:
       m_Calls: []
