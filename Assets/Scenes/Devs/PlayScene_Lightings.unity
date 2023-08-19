@@ -34,7 +34,7 @@ RenderSettings:
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
-  m_ReflectionBounces: 1
+  m_ReflectionBounces: 2
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1319490549}
@@ -742,7 +742,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 486738094}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.29651123, y: 0.000000016432596, z: -0.0000000051018847, w: 0.95502937}
+  m_LocalRotation: {x: 0.29651123, y: -0.000000016432603, z: 0.0000000051018865, w: 0.95502937}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3190,7 +3190,7 @@ Transform:
   m_GameObject: {fileID: 2079409339}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.11861, y: -41.311012, z: 84.30124}
+  m_LocalPosition: {x: 0, y: 2.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
