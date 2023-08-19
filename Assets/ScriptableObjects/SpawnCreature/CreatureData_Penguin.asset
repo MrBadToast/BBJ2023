@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b14b15b540636741a0b8364777635df, type: 3}
-  m_Name: ChickenData
+  m_Name: CreatureData_Penguin
   m_EditorClassIdentifier: 
   key: 
-  creatureName: "\uB2ED"
+  creatureName: "\uC544\uB378\uB9AC \uD3AD\uADC4"
   icon: {fileID: 0}
-  context: "\uC778\uAC04\uC5D0\uAC8C \uAC00\uC7A5 \uC0AC\uB791\uBC1B\uB294 \uAC00\uCD95\uC785\uB2C8\uB2E4"
-  creaturePrefab: {fileID: 7577047527660557917, guid: d92b554e313dd5c428de4da77876199c,
-    type: 3}
+  context: "\uC544\uBB34\uB9AC \uCD94\uC6CC\uB3C4 \uC815\uC7A5\uC740 \uD3EC\uAE30\uD560
+    \uC218 \uC5C6\uC2B5\uB2C8\uB2E4"
+  creaturePrefab: {fileID: 0}
   spawnProbability: 0

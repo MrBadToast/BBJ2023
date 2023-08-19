@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b14b15b540636741a0b8364777635df, type: 3}
-  m_Name: BearData
+  m_Name: CreatureData_Chicken
   m_EditorClassIdentifier: 
   key: 
-  creatureName: "\uBD88\uACF0"
+  creatureName: "\uB2ED"
   icon: {fileID: 0}
-  context: "\uACF0\uC740 \uC0AC\uB78C\uC744 \uCC22\uC5B4"
-  creaturePrefab: {fileID: 558857705754445637, guid: de803e8bf1fbd6448af5ab0688f4215a,
+  context: "\uC778\uAC04\uC5D0\uAC8C \uAC00\uC7A5 \uC0AC\uB791\uBC1B\uB294 \uAC00\uCD95\uC785\uB2C8\uB2E4"
+  creaturePrefab: {fileID: 7577047527660557917, guid: d92b554e313dd5c428de4da77876199c,
     type: 3}
   spawnProbability: 0

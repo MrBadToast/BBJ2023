@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b14b15b540636741a0b8364777635df, type: 3}
-  m_Name: ParrotData
+  m_Name: CreatureData_Eagle
   m_EditorClassIdentifier: 
   key: 
-  creatureName: "\uC655\uAD00 \uC575\uBB34"
+  creatureName: "\uD770\uBA38\uB9AC\uC218\uB9AC"
   icon: {fileID: 0}
-  context: "\uD55C\uBC88 \uC778\uC0AC\uD574\uBCF4\uC2E4\uB798\uC694?"
-  creaturePrefab: {fileID: 7442217095032302871, guid: b8b6021934f9b8c4a85a5c471ba1e4bc,
+  context: "\uC6B8\uC74C\uC18C\uB9AC\uAC00 \u201C\uBBFC\uC8FC\uC8FC\uC758\u201D\uB85C
+    \uC720\uBA85\uD55C \uD558\uB298\uC758 \uC81C\uC655\uC785\uB2C8\uB2E4"
+  creaturePrefab: {fileID: 1789504407587328753, guid: d7f188b14d3de934387382d9c3da8952,
     type: 3}
   spawnProbability: 0
