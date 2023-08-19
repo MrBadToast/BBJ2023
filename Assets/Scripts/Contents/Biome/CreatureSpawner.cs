@@ -61,7 +61,8 @@ public class CreatureSpawner : MonoBehaviour
         beforeSpawnCreatureEvent.Invoke(creatureData);
 
         GameObject createdObject = Instantiate(creatureData.CreaturePrefab, groupData.spawnArea.GetRandomPosition(), Quaternion.identity);
-
+        createdObject.GetComponent<CreatureController>()?.SetLifeTime(UnityEngine.Random.Range(10f, 15f));
+        
         AfterSpawnCreatureEvent.Invoke(createdObject);
     }
 }
