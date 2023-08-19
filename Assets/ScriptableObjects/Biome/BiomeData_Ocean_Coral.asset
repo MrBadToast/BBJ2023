@@ -15,6 +15,10 @@ MonoBehaviour:
   key: Ocean_Coral
   icon: {fileID: 0}
   context: 
+  waterColor: {r: 0, g: 0, b: 1, a: 1}
+  wetAmount: 0
+  snowAmount: 0
+  sandAmount: 0
   useSurfaceRange: 1
   surfaceRangeType: 3
   surfaceRange:
@@ -30,5 +34,5 @@ MonoBehaviour:
   temperatureRange:
     min: 0
     max: 0.5
-  enviromentPrefab: {fileID: 5114588655837424368, guid: bc0bfbae627728348ad7900405f16830,
+  enviromentPrefab: {fileID: 5114588655837424368, guid: 39874b1e18f74e547ba19b55d54cecaa,
     type: 3}

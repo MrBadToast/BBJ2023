@@ -44,6 +44,7 @@ public class WorldController : MonoBehaviour
         currentChangeBiomeTime = changeBiomeTime;
 
         changeBiomeEvent.AddListener(ChangeGroundColor);
+        ChangeGroundColor(biomeContainer.GetBiome(currentBiomeKey));
     }
 
     private void Update()

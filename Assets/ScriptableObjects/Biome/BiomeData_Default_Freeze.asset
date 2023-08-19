@@ -15,6 +15,10 @@ MonoBehaviour:
   key: Default_Freeze
   icon: {fileID: 0}
   context: 
+  waterColor: {r: 0, g: 0, b: 1, a: 1}
+  wetAmount: 0
+  snowAmount: 0
+  sandAmount: 0
   useSurfaceRange: 1
   surfaceRangeType: 1
   surfaceRange:
@@ -30,5 +34,5 @@ MonoBehaviour:
   temperatureRange:
     min: 0
     max: 0
-  enviromentPrefab: {fileID: 3930065634072869082, guid: 43cb9da81c3dc1640a79bd03da65fe76,
+  enviromentPrefab: {fileID: 3930065634072869082, guid: 0faa493810efe1946aff2b4eb63c45d9,
     type: 3}
