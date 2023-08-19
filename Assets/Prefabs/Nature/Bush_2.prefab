@@ -101,7 +101,7 @@ MonoBehaviour:
   lifeTimeRange:
     min: 10
     max: 15
-  signatureTimerMax: 20
+  signatureTimerMax: 3
   OnCreateEvent:
     m_PersistentCalls:
       m_Calls: []
