@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 225e7857c74c8e74dbd87413ae2cfc97
+guid: 53546a61055e01d459d8e71aaadeafbe
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arma-Sheet_0
+      name: arma_1-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cec5b06c85d74d46aea61c510b7312d
-      internalID: -1453984062
+      spriteID: 42e2eaa75356d014e9e653af20fd0bd4
+      internalID: 29338453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_1
+      name: arma_1-Sheet_1
       rect:
         serializedVersion: 2
         x: 32
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7acac9b88263a44789c3ad29cfff958
-      internalID: 126667281
+      spriteID: 9f3c8640dea3717408102b6138908a16
+      internalID: -237860597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_2
+      name: arma_1-Sheet_2
       rect:
         serializedVersion: 2
         x: 64
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92803df5b881ff548bf115b208246b75
-      internalID: -665680730
+      spriteID: ff936d617cd606943b44c9084632bbbe
+      internalID: -1265922737
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_3
+      name: arma_1-Sheet_3
       rect:
         serializedVersion: 2
         x: 96
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c30fb1dcdb5319f408f20d35d27efb56
-      internalID: 885747316
+      spriteID: fdfa5a4fef57e364191e989303d47fc3
+      internalID: -1439290808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_4
+      name: arma_1-Sheet_4
       rect:
         serializedVersion: 2
         x: 0
@@ -221,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9885ce0e67f3db141b22062afb452267
-      internalID: -1245736031
+      spriteID: b3d203f58c494824fbdbbbe46298a7e4
+      internalID: 787445954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_5
+      name: arma_1-Sheet_5
       rect:
         serializedVersion: 2
         x: 32
@@ -242,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c2cccbd45b2fd243b63aa1c6d28043e
-      internalID: -2143421912
+      spriteID: e6e4a0dd30472cc40a5f4470fa734898
+      internalID: 1693511634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_6
+      name: arma_1-Sheet_6
       rect:
         serializedVersion: 2
         x: 64
@@ -263,14 +263,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 125bb80ab106b4045b0913fa4c4746d1
-      internalID: 1273383115
+      spriteID: 52f1c33d4ed276e4bbe3ea8da70ddaef
+      internalID: -1091791672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_7
+      name: arma_1-Sheet_7
       rect:
         serializedVersion: 2
         x: 96
@@ -284,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 486a428651eb3ef408e773e766278ba4
-      internalID: -1388048721
+      spriteID: dd24e5d16bebc4941ada9cb5d07e1276
+      internalID: 1153751415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_8
+      name: arma_1-Sheet_8
       rect:
         serializedVersion: 2
         x: 0
@@ -305,14 +305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd098b0e51f8dea49bee32d61a26518f
-      internalID: -1012128160
+      spriteID: ab57a97e30a936f4486cb02e0bda6ed7
+      internalID: 111975253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_9
+      name: arma_1-Sheet_9
       rect:
         serializedVersion: 2
         x: 32
@@ -326,14 +326,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2d6589dbe8216641af5847b19ea919a
-      internalID: -476716252
+      spriteID: 4ebb7bd268c236d4994891d596749ca7
+      internalID: 1262964286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_10
+      name: arma_1-Sheet_10
       rect:
         serializedVersion: 2
         x: 64
@@ -347,14 +347,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5792ae2d67fc4f40972fe580660ec0f
-      internalID: 1637346212
+      spriteID: 831f136c428e0f242adceafbe4b1e889
+      internalID: -1036383784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_11
+      name: arma_1-Sheet_11
       rect:
         serializedVersion: 2
         x: 96
@@ -368,14 +368,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43989e600e944804fbe0b764fd7042b0
-      internalID: -1694904816
+      spriteID: 6288ebed4297c4a4cb1fd9bffb6474f6
+      internalID: -1668884391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_12
+      name: arma_1-Sheet_12
       rect:
         serializedVersion: 2
         x: 128
@@ -389,14 +389,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 734c94d3335a6dc46badd888b45b56c6
-      internalID: 703937693
+      spriteID: 3d119b1948bf28b40848cafefe0be0d4
+      internalID: -1341739196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_13
+      name: arma_1-Sheet_13
       rect:
         serializedVersion: 2
         x: 160
@@ -410,14 +410,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da9ab45e4c3a63c47b0a2d4b0eaf2ac9
-      internalID: -1363015578
+      spriteID: 91bf6805e4cc7af42831b5d1fcd857d3
+      internalID: 352127718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_14
+      name: arma_1-Sheet_14
       rect:
         serializedVersion: 2
         x: 192
@@ -431,14 +431,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 639dd57202af21c4eb97e0dd06b4af1a
-      internalID: -656101320
+      spriteID: 54666278ccb6cbb4696380b5c8fbb1ae
+      internalID: 1164508799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_15
+      name: arma_1-Sheet_15
       rect:
         serializedVersion: 2
         x: 0
@@ -452,14 +452,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b32ec5cebc3e014469a9a6e9b54aa8f0
-      internalID: -1117965487
+      spriteID: 25ebf4c465638de41befc1146aac7275
+      internalID: 1220212735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_16
+      name: arma_1-Sheet_16
       rect:
         serializedVersion: 2
         x: 32
@@ -473,14 +473,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a45d3205be1425d4eb1b995b3140c57f
-      internalID: -840266052
+      spriteID: d1b88103b46292c4fbcb90b6965e7328
+      internalID: -661917480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_17
+      name: arma_1-Sheet_17
       rect:
         serializedVersion: 2
         x: 64
@@ -494,14 +494,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ce9bc4cf302a224f8e3c5b1000fca28
-      internalID: 1400705685
+      spriteID: 211c12191ee79e4419c0c861d7fc6e6f
+      internalID: -129436805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_18
+      name: arma_1-Sheet_18
       rect:
         serializedVersion: 2
         x: 96
@@ -515,8 +515,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 854c16aad95c9cc43aaa48fe2d55a96f
-      internalID: -853207480
+      spriteID: 5873388a4590f7241b78d4e58eb375fd
+      internalID: 888964936
       vertices: []
       indices: 
       edges: []
@@ -524,7 +524,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a162f91d4ef81c34385e605adb780048
+    spriteID: 776c1fe46331e534c80ae45256de7cf6
     internalID: 0
     vertices: []
     indices: 
@@ -532,25 +532,25 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      arma-Sheet_0: -1453984062
-      arma-Sheet_1: 126667281
-      arma-Sheet_10: 1637346212
-      arma-Sheet_11: -1694904816
-      arma-Sheet_12: 703937693
-      arma-Sheet_13: -1363015578
-      arma-Sheet_14: -656101320
-      arma-Sheet_15: -1117965487
-      arma-Sheet_16: -840266052
-      arma-Sheet_17: 1400705685
-      arma-Sheet_18: -853207480
-      arma-Sheet_2: -665680730
-      arma-Sheet_3: 885747316
-      arma-Sheet_4: -1245736031
-      arma-Sheet_5: -2143421912
-      arma-Sheet_6: 1273383115
-      arma-Sheet_7: -1388048721
-      arma-Sheet_8: -1012128160
-      arma-Sheet_9: -476716252
+      arma_1-Sheet_0: 29338453
+      arma_1-Sheet_1: -237860597
+      arma_1-Sheet_10: -1036383784
+      arma_1-Sheet_11: -1668884391
+      arma_1-Sheet_12: -1341739196
+      arma_1-Sheet_13: 352127718
+      arma_1-Sheet_14: 1164508799
+      arma_1-Sheet_15: 1220212735
+      arma_1-Sheet_16: -661917480
+      arma_1-Sheet_17: -129436805
+      arma_1-Sheet_18: 888964936
+      arma_1-Sheet_2: -1265922737
+      arma_1-Sheet_3: -1439290808
+      arma_1-Sheet_4: 787445954
+      arma_1-Sheet_5: 1693511634
+      arma_1-Sheet_6: -1091791672
+      arma_1-Sheet_7: 1153751415
+      arma_1-Sheet_8: 111975253
+      arma_1-Sheet_9: 1262964286
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
