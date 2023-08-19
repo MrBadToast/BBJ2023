@@ -32,7 +32,11 @@ public class WorldController : MonoBehaviour
     private float colorGroundLerpTime = 1f;
     private MaterialPropertyBlock mpbGround;
 
+    [SerializeField]
+    private float waterLevelLerpTime = 1f;
+
     private Coroutine updateGroundColor;
+    private Coroutine updateWaterLevel;
 
     private void Awake()
     {
@@ -130,7 +134,6 @@ public class WorldController : MonoBehaviour
         var startSnow = groundMeshRendererList[0].sharedMaterial.GetFloat("_SnowAmount");
         var startSand = groundMeshRendererList[0].sharedMaterial.GetFloat("_SandAmount");
 
-
         var lerpTime = 0f;
         while (lerpTime < colorGroundLerpTime)
         {
@@ -142,6 +145,34 @@ public class WorldController : MonoBehaviour
             mpbGround.SetFloat("_GrassWetness", lerpWet);
             mpbGround.SetFloat("_SnowAmount", lerpSnow);
             mpbGround.SetFloat("_SandAmount", lerpSand);
+
+            foreach (var renderer in groundMeshRendererList)
+            {
+                renderer.SetPropertyBlock(mpbGround);
+            }
+            yield return null;
+        }
+    }
+
+    public void ChangeWaterLevel(float height)
+    {
+        if (updateWaterLevel != null)
+            StopCoroutine(updateWaterLevel);
+
+        updateWaterLevel = StartCoroutine(UpdateWaterLevel(height));
+    }
+
+    private IEnumerator UpdateWaterLevel(float height)
+    {
+        var startWet = groundMeshRendererList[0].sharedMaterial.GetFloat("_WaterLevel");
+
+        var lerpTime = 0f;
+        while (lerpTime < waterLevelLerpTime)
+        {
+            lerpTime += Time.deltaTime;
+            var lerpWaterLevel = Mathf.Lerp(startWet, height, lerpTime / waterLevelLerpTime);
+
+            mpbGround.SetFloat("_WaterLevel", lerpWaterLevel);
 
             foreach (var renderer in groundMeshRendererList)
             {
