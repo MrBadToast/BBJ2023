@@ -15,6 +15,10 @@ MonoBehaviour:
   key: Ocean_Freeze
   icon: {fileID: 0}
   context: 
+  waterColor: {r: 0, g: 0, b: 1, a: 1}
+  wetAmount: 0
+  snowAmount: 0
+  sandAmount: 0
   useSurfaceRange: 1
   surfaceRangeType: 3
   surfaceRange:
@@ -30,5 +34,5 @@ MonoBehaviour:
   temperatureRange:
     min: 0
     max: 0
-  enviromentPrefab: {fileID: 5114588655837424368, guid: bc0bfbae627728348ad7900405f16830,
+  enviromentPrefab: {fileID: 5114588655837424368, guid: 1f6ab1a9df0840b40a962fcf2543c231,
     type: 3}

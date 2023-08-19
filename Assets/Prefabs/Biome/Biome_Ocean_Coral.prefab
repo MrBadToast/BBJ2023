@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 6435404387621272615}
   - component: {fileID: 8088148302549526308}
   m_Layer: 0
-  m_Name: Biome_Ocean
+  m_Name: Biome_Ocean_Coral
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -15,6 +15,10 @@ MonoBehaviour:
   key: SeaSide_Savana
   icon: {fileID: 0}
   context: 
+  waterColor: {r: 0, g: 0, b: 1, a: 1}
+  wetAmount: 0
+  snowAmount: 0
+  sandAmount: 0
   useSurfaceRange: 1
   surfaceRangeType: 2
   surfaceRange:
@@ -30,5 +34,5 @@ MonoBehaviour:
   temperatureRange:
     min: 0
     max: 0.7
-  enviromentPrefab: {fileID: 7292090551739592525, guid: ded4abcdc5ca2c04b885264452547a7a,
+  enviromentPrefab: {fileID: 7292090551739592525, guid: abb31334348e2b446bd00f5abdb624e3,
     type: 3}
