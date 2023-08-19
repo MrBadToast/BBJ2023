@@ -18,6 +18,10 @@ public class BiomeData : ScriptableObject
     }
 
     [SerializeField]
+    private int order;
+    public int Order => order;
+
+    [SerializeField]
     private string key;
     public string Key => key;
 
@@ -88,7 +92,6 @@ public class BiomeData : ScriptableObject
     [SerializeField]
     private GameObject enviromentPrefab;
     public GameObject EnviromentPrefab => enviromentPrefab;
-
 
     public bool ContainStatus(StatusInfo statusInfo)
     {
