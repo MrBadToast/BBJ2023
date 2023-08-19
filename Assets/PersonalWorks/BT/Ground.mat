@@ -128,8 +128,8 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _GrassAngle: 0.17
-    - _GrassSmoothness: 0.59
+    - _GrassAngle: 0.41
+    - _GrassSmoothness: 0.36
     - _GrassWetness: 0
     - _Metallic: 0
     - _OcclusionStrength: 1

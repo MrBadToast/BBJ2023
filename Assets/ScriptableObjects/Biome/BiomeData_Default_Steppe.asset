@@ -10,25 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad675e621ed62f646b8d32c27bc52782, type: 3}
-  m_Name: BiomeData_SeaSide
+  m_Name: BiomeData_Default_Steppe
   m_EditorClassIdentifier: 
-  key: SeaSide
+  key: Default_Steppe
   icon: {fileID: 0}
   context: 
   useSurfaceRange: 1
-  surfaceRangeType: 2
+  surfaceRangeType: 1
   surfaceRange:
     min: -0.2
-    max: 0.7
+    max: 0
   useHumidityRange: 0
-  humidityRangeType: 2
+  humidityRangeType: 0
   humidityRange:
     min: 0
     max: 0
-  useTemperatureRange: 0
+  useTemperatureRange: 1
   temperatureRangeType: 2
   temperatureRange:
     min: 0
-    max: 0
-  enviromentPrefab: {fileID: 7292090551739592525, guid: ded4abcdc5ca2c04b885264452547a7a,
+    max: 0.5
+  enviromentPrefab: {fileID: 3930065634072869082, guid: 43cb9da81c3dc1640a79bd03da65fe76,
     type: 3}

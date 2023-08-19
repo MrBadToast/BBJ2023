@@ -15,9 +15,27 @@ MonoBehaviour:
   dataTable:
     keys:
     - Default
+    - Default_Freeze
+    - Default_Steppe
     - Ocean
+    - Ocean_Coral
+    - Ocean_Freeze
     - SeaSide
+    - SeaSide_Cold
+    - SeaSide_Freeze
+    - SeaSide_Rainforest
+    - SeaSide_Savana
+    - SeaSide_Warm
     values:
     - {fileID: 11400000, guid: 109dcee806599a347a3250e81faee241, type: 2}
+    - {fileID: 11400000, guid: 5e04900d327b74a40a637148015dce0f, type: 2}
+    - {fileID: 11400000, guid: 0e14a71524de7364dae1b3cdc74914ea, type: 2}
     - {fileID: 11400000, guid: 99209714d6728f44ca22f1e5b1fe0d52, type: 2}
+    - {fileID: 11400000, guid: 28d1dbaf3dd531a4ab2b2ce2dad952bd, type: 2}
+    - {fileID: 11400000, guid: 07b1354b7fdbb5240828a6713c4751ee, type: 2}
     - {fileID: 11400000, guid: 88015bb592216184a821f6c1b1c2ed03, type: 2}
+    - {fileID: 11400000, guid: 5f2a46dc1db510845b85f21bfa8c3ccc, type: 2}
+    - {fileID: 11400000, guid: e0836781dc48a2d4e9beef6768f148fe, type: 2}
+    - {fileID: 11400000, guid: 9159edb01ccb78749b309d710eda945e, type: 2}
+    - {fileID: 11400000, guid: aa17ac8133cae55448192c1a93cf52d3, type: 2}
+    - {fileID: 11400000, guid: 70577057f68fa6d4eaa2de51f8b6d83d, type: 2}

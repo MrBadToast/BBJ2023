@@ -16,10 +16,10 @@ MonoBehaviour:
   icon: {fileID: 0}
   context: 
   useSurfaceRange: 1
-  surfaceRangeType: 3
+  surfaceRangeType: 1
   surfaceRange:
-    min: 0
-    max: 0.7
+    min: 0.7
+    max: 1
   useHumidityRange: 0
   humidityRangeType: 2
   humidityRange:
