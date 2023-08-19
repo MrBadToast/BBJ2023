@@ -16,7 +16,7 @@ MonoBehaviour:
   key: SeaSide
   icon: {fileID: 0}
   context: 
-  waterColor: {r: 1, g: 0.10744561, b: 0, a: 0.57254905}
+  waterColor: {r: 0.14528298, g: 0.3905637, b: 1, a: 0.49019608}
   wetAmount: 0.5
   snowAmount: 0.5
   sandAmount: 0

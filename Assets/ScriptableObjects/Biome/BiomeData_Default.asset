@@ -16,7 +16,7 @@ MonoBehaviour:
   key: Default
   icon: {fileID: 0}
   context: 
-  waterColor: {r: 0, g: 0.78048754, b: 1, a: 0.57254905}
+  waterColor: {r: 0, g: 0.78048754, b: 1, a: 0.49803922}
   wetAmount: 0
   snowAmount: 0
   sandAmount: 0
