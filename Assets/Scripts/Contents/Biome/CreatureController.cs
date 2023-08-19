@@ -7,6 +7,8 @@ using Random = UnityEngine.Random;
 
 public class CreatureController : MonoBehaviour
 {
+    private ObjectTweenAnimator tweenAnimator;
+
     [SerializeField]
     private AmountRangeFloat lifeTimeRange;
     private float lifeTime;
@@ -24,12 +26,14 @@ public class CreatureController : MonoBehaviour
     private void Awake()
     {
         lifeTime = lifeTimeRange.GetRandomAmount();
+        _animator = GetComponent<Animator>();
+        tweenAnimator = GetComponent<ObjectTweenAnimator>();
     }
 
     private void Start()
     {
+        tweenAnimator?.PlayAnimation("Spawn");
         OnCreateEvent.Invoke();
-        _animator = GetComponent<Animator>();
     }
 
     public void SetLifeTime(float lifeTime)
@@ -66,6 +70,7 @@ public class CreatureController : MonoBehaviour
 
     public void DestroyCreature()
     {
+        tweenAnimator?.PlayAnimation("DeSpawn");
         _animator.SetTrigger("deSpawn");
     }
 

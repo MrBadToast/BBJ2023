@@ -86,7 +86,7 @@ public class CreatureSpawner : MonoBehaviour
         createdObject.GetComponent<CreatureController>().OnDestroyEvent.AddListener(RemovedCreature);
         createdObject.GetComponent<CreatureController>().OnDestroyEvent.AddListener(() =>
         {
-            Instantiate(destorySFXPlayer, this.transform);
+            Instantiate(this.destorySFXPlayer);
         });
         
         AfterSpawnCreatureEvent.Invoke(createdObject);
