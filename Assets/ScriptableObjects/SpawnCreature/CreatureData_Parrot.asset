@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: 
   creatureName: "\uC655\uAD00 \uC575\uBB34"
-  icon: {fileID: 0}
+  icon: {fileID: 714271476, guid: 7ff4cfd41137573459e018de62e4ece1, type: 3}
   context: "\uD55C\uBC88 \uC778\uC0AC\uD574\uBCF4\uC2E4\uB798\uC694?"
   creaturePrefab: {fileID: 7442217095032302871, guid: b8b6021934f9b8c4a85a5c471ba1e4bc,
     type: 3}
