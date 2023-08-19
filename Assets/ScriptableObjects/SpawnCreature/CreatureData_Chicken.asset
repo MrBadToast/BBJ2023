@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: Chicken
   creatureName: "\uB2ED"
-  icon: {fileID: -2140399873, guid: 977baf147f9175b4fa0e286d40b89acd, type: 3}
+  icon: {fileID: 21300000, guid: cd0416d94532db943936f0f48bb87077, type: 3}
   context: "\uC778\uAC04\uC5D0\uAC8C \uAC00\uC7A5 \uC0AC\uB791\uBC1B\uB294 \uAC00\uCD95\uC785\uB2C8\uB2E4."
   creaturePrefab: {fileID: 7577047527660557917, guid: d92b554e313dd5c428de4da77876199c,
     type: 3}

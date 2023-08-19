@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: Gazelle
   creatureName: "\uAC00\uC824"
-  icon: {fileID: -160701745, guid: f2f962783acdad84cb1e45b7ed2d7b50, type: 3}
+  icon: {fileID: 21300000, guid: 991f6dcded692474797efcff92ac1cb6, type: 3}
   context: "\uBAA9\uC774 \uAE38\uC5B4 \uC2AC\uD508 \uC9D0\uC2B9."
   creaturePrefab: {fileID: 3546201627146773788, guid: f34eeadc32dec6c4d8ad3a514a112870,
     type: 3}
