@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b14b15b540636741a0b8364777635df, type: 3}
   m_Name: NimoData
   m_EditorClassIdentifier: 
+  key: 
+  creatureName: "\uD770\uB3D9\uAC00\uB9AC "
+  icon: {fileID: 0}
+  context: "\uC601\uD654\uC5D0 \uB098\uC628 \"\uADF8\uAC70\" \uB9DE\uC2B5\uB2C8\uB2E4"
   creaturePrefab: {fileID: 3388496246050979781, guid: 79fb2bf098bd59d478f7f3e0f1b6bde0,
     type: 3}
   spawnProbability: 0
-  spawnTime: 0
-  spawnPoint: {fileID: 2516472250371384798, guid: 88410ff5377b72246a833da444fca5d1,
-    type: 3}

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class WaterController : MonoBehaviour
 {
@@ -11,12 +12,17 @@ public class WaterController : MonoBehaviour
     private MaterialPropertyBlock mpb;
 
     [SerializeField]
-    private AmountRangeFloat heightRange;
+    private AmountRangeFloat heightScaleRange;
+
+    [SerializeField]
+    private AmountRangeFloat heightYRange;
 
     [SerializeField]
     private float heightLerpTime = 1f;
     [SerializeField]
     private float colorLerpTime = 1f;
+
+    public UnityEvent<float> updateHeightY;
 
     private Coroutine updateHeight;
     private Coroutine updateColor;
@@ -36,7 +42,7 @@ public class WaterController : MonoBehaviour
     private void UpdateStatus(StatusInfo statusInfo)
     {
         var surfaceAmount = statusInfo.GetElement(StatusType.Surface).CalculateTotalAmount();
-        var height = heightRange.GetRange((surfaceAmount + 1) * 0.5f);
+        var height = heightScaleRange.GetRange((surfaceAmount + 1) * 0.5f);
         ChangeHeight(height);
     }
 
