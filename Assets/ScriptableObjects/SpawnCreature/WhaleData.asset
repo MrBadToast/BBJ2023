@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b14b15b540636741a0b8364777635df, type: 3}
-  m_Name: FoxData
+  m_Name: WhaleData
   m_EditorClassIdentifier: 
   key: 
-  creatureName: "\uBD89\uC740 \uC5EC\uC6B0"
+  creatureName: "\uD639\uB4F1\uACE0\uB798"
   icon: {fileID: 0}
-  context: "\uD558\uD2F0\uD558\uD2F0\uD558\uD2F0\uD638"
-  creaturePrefab: {fileID: 4527390123600297730, guid: 1473bbf31f8e9304f856a9a787f9da03,
-    type: 3}
+  context: "\uC9C0\uAD6C\uC0C1\uC5D0\uC11C \uAC00\uC7A5 \uD06C\uACE0 \uADFC\uBA74\uD55C
+    \uC5EC\uD589\uC790 \uC785\uB2C8\uB2E4"
+  creaturePrefab: {fileID: 0}
   spawnProbability: 0
