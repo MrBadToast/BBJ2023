@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b14b15b540636741a0b8364777635df, type: 3}
-  m_Name: FoxData
+  m_Name: ParakeetData
   m_EditorClassIdentifier: 
   key: 
-  creatureName: "\uBD89\uC740 \uC5EC\uC6B0"
+  creatureName: "\uCCAD\uC0C8\uCE58"
   icon: {fileID: 0}
-  context: "\uD558\uD2F0\uD558\uD2F0\uD558\uD2F0\uD638"
-  creaturePrefab: {fileID: 4527390123600297730, guid: 1473bbf31f8e9304f856a9a787f9da03,
-    type: 3}
+  context: "\uACE0\uAE30\uC57C, \uB0B4\uAC00 \uC8FD\uB294 \uADF8\uB0A0\uAE4C\uC9C0
+    \uD568\uAED8 \uC788\uC73C\uB9C8."
+  creaturePrefab: {fileID: 0}
   spawnProbability: 0

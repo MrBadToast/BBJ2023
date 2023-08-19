@@ -23,7 +23,7 @@ MonoBehaviour:
   surfaceRangeType: 3
   surfaceRange:
     min: 0
-    max: 0.7
+    max: -0.1
   useHumidityRange: 0
   humidityRangeType: 2
   humidityRange:
