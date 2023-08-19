@@ -11,6 +11,11 @@ public class CreatureData : ScriptableObject
     public string Key => key;
 
     [SerializeField]
+    [TextArea]
+    private string creatureName;
+    public string CreatureName => creatureName;
+
+    [SerializeField]
     private Sprite icon;
     public Sprite Icon => icon;
 
