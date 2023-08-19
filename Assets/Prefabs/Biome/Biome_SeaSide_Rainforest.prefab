@@ -141,6 +141,8 @@ MonoBehaviour:
   creatureDataList:
   - creatureData: {fileID: 11400000, guid: fc6cc0c9eca869444879260ac736e74c, type: 2}
     spawnArea: {fileID: 7258635645745568992}
+  - creatureData: {fileID: 11400000, guid: 1bf8f17e753eb2c47a654b58c04a1fb4, type: 2}
+    spawnArea: {fileID: 4090651941091905238}
   spawnTimeRange:
     min: 5
     max: 10
