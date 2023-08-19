@@ -6,13 +6,20 @@ using UnityEngine.Events;
 
 public class CreatureController : MonoBehaviour
 {
+    [SerializeField]
+    private AmountRangeFloat lifeTimeRange;
     private float lifeTime;
+
     public UnityEvent OnCreateEvent;
     public UnityEvent OnDestroyEvent;
-    
+
     private void Awake()
     {
-        lifeTime = 10f;
+        lifeTime = lifeTimeRange.GetRandomAmount();
+    }
+
+    private void Start()
+    {
         OnCreateEvent.Invoke();
     }
 

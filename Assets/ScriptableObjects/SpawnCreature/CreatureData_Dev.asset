@@ -17,4 +17,4 @@ MonoBehaviour:
   context: 
   creaturePrefab: {fileID: 6445622947902219334, guid: 5126d16094322f942903ca64acb5fb10,
     type: 3}
-  spawnProbability: 0
+  spawnProbability: 20

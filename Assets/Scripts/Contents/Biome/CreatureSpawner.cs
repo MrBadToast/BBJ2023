@@ -18,7 +18,9 @@ public class CreatureSpawner : MonoBehaviour
     private List<float> spawnProbabilityList;
 
     // spawn timer
-    public float spawnTimerMax;
+    [SerializeField]
+    private AmountRangeFloat spawnTimeRange;
+
     private float spawnTimer;
 
     // Unity Events
@@ -35,7 +37,7 @@ public class CreatureSpawner : MonoBehaviour
             spawnProbabilityList.Add(creature.creatureData.SpawnProbability);
         }
 
-        spawnTimer = spawnTimerMax;
+        spawnTimer = spawnTimeRange.GetRandomAmount();
     }
 
     private void Update()
@@ -44,7 +46,7 @@ public class CreatureSpawner : MonoBehaviour
         if (spawnTimer < 0)
         {
             // 타이머 초기화
-            spawnTimer = spawnTimerMax;
+            spawnTimer = spawnTimeRange.GetRandomAmount();
             SpawnCreature();
         }
 
@@ -61,8 +63,7 @@ public class CreatureSpawner : MonoBehaviour
         beforeSpawnCreatureEvent.Invoke(creatureData);
 
         GameObject createdObject = Instantiate(creatureData.CreaturePrefab, groupData.spawnArea.GetRandomPosition(), Quaternion.identity);
-        createdObject.GetComponent<CreatureController>()?.SetLifeTime(UnityEngine.Random.Range(10f, 15f));
-        
+
         AfterSpawnCreatureEvent.Invoke(createdObject);
     }
 }
