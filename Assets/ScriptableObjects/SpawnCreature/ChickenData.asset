@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b14b15b540636741a0b8364777635df, type: 3}
-  m_Name: CreatureData
+  m_Name: ChickenData
   m_EditorClassIdentifier: 
-  creaturePrefab: {fileID: 6162262431362806938, guid: f4db65e686980004bbba4530ec774de0,
+  creaturePrefab: {fileID: 7577047527660557917, guid: d92b554e313dd5c428de4da77876199c,
     type: 3}
   spawnProbability: 0
   spawnTime: 0
