@@ -24,6 +24,9 @@ public class BiomeContainer : ScriptableObject
     {
         foreach (var item in dataTable)
         {
+            if(item.Key == "Default")
+                continue;
+
             var isContains = item.Value.ContainStatus(statusInfo);
 
             if (isContains)

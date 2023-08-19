@@ -31,6 +31,19 @@ public class BiomeData : ScriptableObject
     public string Context => context;
 
     [SerializeField]
+    private Color waterColor = Color.blue;
+    public Color WaterColor => waterColor;
+
+    [SerializeField]
+    private Color surfaceColor = Color.green;
+    public Color SurfaceColor => surfaceColor;
+
+    [SerializeField]
+    private Color groundColor = Color.yellow;
+    public Color GroundColor => groundColor;
+
+
+    [SerializeField]
     private bool useSurfaceRange = true;
     public bool UseSurfaceRange => useSurfaceRange;
 

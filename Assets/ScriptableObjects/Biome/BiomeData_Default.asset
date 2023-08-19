@@ -15,6 +15,9 @@ MonoBehaviour:
   key: Default
   icon: {fileID: 0}
   context: 
+  waterColor: {r: 0, g: 0.78048754, b: 1, a: 0.57254905}
+  surfaceColor: {r: 0, g: 1, b: 0.116532326, a: 1}
+  groundColor: {r: 0.41509432, g: 0.20239682, b: 0.025453908, a: 1}
   useSurfaceRange: 0
   surfaceRangeType: 0
   surfaceRange:
