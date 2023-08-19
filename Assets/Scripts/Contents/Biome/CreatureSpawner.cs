@@ -23,11 +23,11 @@ public class CreatureSpawner : MonoBehaviour
     private AmountRangeFloat spawnTimeRange;
 
     private float spawnTimer;
-    
+
     // Number of Spawned Creature
     private int _numOfSpawnedCreature;
     public int maxNumOfSpawnedCreature;
-    
+
     // Unity Events
     public UnityEvent<CreatureData> beforeSpawnCreatureEvent;
     public UnityEvent<GameObject> AfterSpawnCreatureEvent;
@@ -35,6 +35,10 @@ public class CreatureSpawner : MonoBehaviour
     // Prefabs
     [SerializeField] private GameObject spawnEffect;
     [SerializeField] private GameObject destorySFXPlayer;
+
+    private List<CreatureController> activeCreatureList = new List<CreatureController>();
+
+
     private void Start()
     {
         spawnTimer = 1000f;
@@ -68,14 +72,16 @@ public class CreatureSpawner : MonoBehaviour
     {
         // Spawn할 생물을 선정
         GroupData groupData = RandomUtility.Pickup(spawnProbabilityList, creatureDataList);
-        
+
         var creatureData = groupData.creatureData;
 
         beforeSpawnCreatureEvent.Invoke(creatureData);
         Vector3 spawnPoint = groupData.spawnArea.GetRandomPosition();
         GameObject createdObject = Instantiate(creatureData.CreaturePrefab, groupData.spawnArea.GetRandomPosition(), Quaternion.identity);
 
-        createdObject.GetComponent<CreatureController>().OnCreateEvent.AddListener(() =>
+        var creatureController = createdObject.GetComponent<CreatureController>();
+
+        creatureController.OnCreateEvent.AddListener(() =>
         {
             if (spawnEffect != null)
             {
@@ -83,17 +89,30 @@ public class CreatureSpawner : MonoBehaviour
             }
         });
         ++_numOfSpawnedCreature;
-        createdObject.GetComponent<CreatureController>().OnDestroyEvent.AddListener(RemovedCreature);
-        createdObject.GetComponent<CreatureController>().OnDestroyEvent.AddListener(() =>
+        creatureController.OnDestroyEvent.AddListener(RemovedCreature);
+        creatureController.OnDestroyEvent.AddListener(() =>
         {
+            activeCreatureList.Remove(creatureController);
             Instantiate(this.destorySFXPlayer);
         });
-        
+
+
+        activeCreatureList.Add(creatureController);
         AfterSpawnCreatureEvent.Invoke(createdObject);
     }
 
     public void RemovedCreature()
     {
         --_numOfSpawnedCreature;
+    }
+
+    public void AllDestroy()
+    {
+        foreach (var creature in activeCreatureList)
+        {
+            creature.DestroyCreature();
+        }
+
+        activeCreatureList.Clear();
     }
 }
