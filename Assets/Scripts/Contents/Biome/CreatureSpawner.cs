@@ -25,6 +25,7 @@ public class CreatureSpawner : MonoBehaviour
     
     // Number of Spawned Creature
     private int _numOfSpawnedCreature;
+    public int maxNumOfSpawnedCreature;
     
     // Unity Events
     public UnityEvent<CreatureData> beforeSpawnCreatureEvent;
@@ -50,7 +51,10 @@ public class CreatureSpawner : MonoBehaviour
         {
             // 타이머 초기화
             spawnTimer = spawnTimeRange.GetRandomAmount();
-            SpawnCreature();
+            if (_numOfSpawnedCreature < maxNumOfSpawnedCreature)
+            {
+                SpawnCreature();
+            }
         }
 
         spawnTimer -= Time.deltaTime;
