@@ -192,12 +192,12 @@ MonoBehaviour:
     spawnArea: {fileID: 8083543346586292834}
   - creatureData: {fileID: 11400000, guid: cce1d93dcdb9e4f4cb80cad9c64372a0, type: 2}
     spawnArea: {fileID: 5692012996124059599}
-  - creatureData: {fileID: 11400000, guid: 1bf8f17e753eb2c47a654b58c04a1fb4, type: 2}
+  - creatureData: {fileID: 11400000, guid: 1324637cda899ae4f8fc5e7de37b030b, type: 2}
     spawnArea: {fileID: 8083543346586292834}
   spawnTimeRange:
     min: 5
-    max: 10
-  maxNumOfSpawnedCreature: 5
+    max: 7
+  maxNumOfSpawnedCreature: 3
   beforeSpawnCreatureEvent:
     m_PersistentCalls:
       m_Calls: []

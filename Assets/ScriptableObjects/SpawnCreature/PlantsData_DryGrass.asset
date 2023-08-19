@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b14b15b540636741a0b8364777635df, type: 3}
+  m_Name: PlantsData_DryGrass
+  m_EditorClassIdentifier: 
+  key: DryGrass
+  creatureName: "\uD480"
+  icon: {fileID: 1589567754, guid: 32071fcf1f6a0c8469022eb94e221f52, type: 3}
+  context: "\uC774\uAC8C \uB3C4\uAC10\uC5D0 \uC788\uB2E4\uBA74 \uBB54\uAC00 \uC798\uBABB\uB41C
+    \uAC81\uB2C8\uB2E4."
+  creaturePrefab: {fileID: 1079911406785000114, guid: 3197d144f09d66e4a85f9d635d2cee9f,
+    type: 3}
+  spawnProbability: 0

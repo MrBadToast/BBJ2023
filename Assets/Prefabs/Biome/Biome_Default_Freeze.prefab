@@ -200,7 +200,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eddab1458d4a8a41897da1081d063a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  creatureDataList: []
+  creatureDataList:
+  - creatureData: {fileID: 11400000, guid: 1bf8f17e753eb2c47a654b58c04a1fb4, type: 2}
+    spawnArea: {fileID: 366091999409358879}
   spawnTimeRange:
     min: 5
     max: 10
@@ -211,6 +213,10 @@ MonoBehaviour:
   AfterSpawnCreatureEvent:
     m_PersistentCalls:
       m_Calls: []
+  spawnEffect: {fileID: 3405140234659635900, guid: 5a931b1618b057a439b726be93d101d1,
+    type: 3}
+  destorySFXPlayer: {fileID: 1133932875261127371, guid: 251d5f14b63a8d548a3926cffc3e698a,
+    type: 3}
 --- !u!1 &6555250784286393974
 GameObject:
   m_ObjectHideFlags: 0

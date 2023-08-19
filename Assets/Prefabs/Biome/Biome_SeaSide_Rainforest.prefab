@@ -141,12 +141,16 @@ MonoBehaviour:
   creatureDataList:
   - creatureData: {fileID: 11400000, guid: fc6cc0c9eca869444879260ac736e74c, type: 2}
     spawnArea: {fileID: 7258635645745568992}
-  - creatureData: {fileID: 11400000, guid: 1bf8f17e753eb2c47a654b58c04a1fb4, type: 2}
+  - creatureData: {fileID: 11400000, guid: 2097cec2308c88249a31139f2e4ab1a8, type: 2}
+    spawnArea: {fileID: 4090651941091905238}
+  - creatureData: {fileID: 11400000, guid: 2097cec2308c88249a31139f2e4ab1a8, type: 2}
+    spawnArea: {fileID: 4090651941091905238}
+  - creatureData: {fileID: 11400000, guid: 109c7031053221e478f14a91488c0d6f, type: 2}
     spawnArea: {fileID: 4090651941091905238}
   spawnTimeRange:
-    min: 5
-    max: 10
-  maxNumOfSpawnedCreature: 5
+    min: 3
+    max: 6
+  maxNumOfSpawnedCreature: 7
   beforeSpawnCreatureEvent:
     m_PersistentCalls:
       m_Calls: []
