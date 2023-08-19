@@ -4,7 +4,7 @@ using UnityEngine;
 using Sirenix.OdinInspector;
 
 [CreateAssetMenu(fileName = "UIColorData", menuName = "UI/UIColorData", order = 0)]
-public class UIColorData : SerializedScriptableObject
+public class UIColorData : ScriptableObject
 {
 
     [SerializeField]

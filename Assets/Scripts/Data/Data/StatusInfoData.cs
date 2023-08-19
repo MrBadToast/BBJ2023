@@ -6,7 +6,7 @@ using System;
 using System.Linq;
 
 [CreateAssetMenu(fileName = "StatusInfoData", menuName = "Status/StatusInfo", order = 0)]
-public class StatusInfoData : SerializedScriptableObject
+public class StatusInfoData : ScriptableObject
 {
     [SerializeField]
     private SerializableDictionary<StatusType, StatusElement> statusDic = new SerializableDictionary<StatusType, StatusElement>();
