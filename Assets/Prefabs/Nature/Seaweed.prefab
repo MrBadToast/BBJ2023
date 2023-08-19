@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6931019601314259429}
   - component: {fileID: 3013117383840291434}
   - component: {fileID: 1901342481007482329}
+  - component: {fileID: 4379163623777731870}
   m_Layer: 0
   m_Name: Seaweed
   m_TagString: Untagged
@@ -131,6 +132,44 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &1901342481007482329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5860541057538128206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380e1a398b4fda942a91fb512f26e419, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animatorName: 
+  animationTable:
+    keys:
+    - DeSpawn
+    - Spawn
+    values:
+    - animationList:
+      - {fileID: 11400000, guid: c5ea7269f1a8cd3488dc4e622199825b, type: 2}
+      - {fileID: 11400000, guid: 4db05fd71a3a1004690cc7bfb1ecaf89, type: 2}
+    - animationList:
+      - {fileID: 11400000, guid: f0a559a63c3256946b56af17bd6488c3, type: 2}
+      - {fileID: 11400000, guid: 90d88ee26d7cb3a4b85eb6f6a8bc98f9, type: 2}
+  completeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  stopEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  stopActionType: 0
+  autoActiveByPlay: 0
+  autoStartPlay: 0
+  resetOriginTransformByPlay: 0
+  resetOriginColorByPlay: 0
+  resetOriginTransformByStop: 0
+  resetOriginColorByStop: 0
+  ignoreTimeScaled: 0
+--- !u!114 &4379163623777731870
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
