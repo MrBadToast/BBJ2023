@@ -20,4 +20,9 @@ public class UIPausePopup : UIBasePopup
         base.EndClose();
         Time.timeScale = 1f;
     }
+
+    public void UnPaused()
+    {
+        Time.timeScale = 1f;
+    }
 }
