@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,7 +23,7 @@ public class BiomeContainer : ScriptableObject
 
     public BiomeData GetBiome(StatusInfo statusInfo)
     {
-        foreach (var item in dataTable)
+        foreach (var item in dataTable.OrderBy((i)=>i.Value.Order))
         {
             if(item.Key == "Default")
                 continue;

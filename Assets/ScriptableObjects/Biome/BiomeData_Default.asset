@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad675e621ed62f646b8d32c27bc52782, type: 3}
   m_Name: BiomeData_Default
   m_EditorClassIdentifier: 
+  order: 9
   key: Default
   icon: {fileID: 0}
   context: 
