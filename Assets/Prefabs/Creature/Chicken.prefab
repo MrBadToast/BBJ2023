@@ -119,6 +119,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f91755ee41d2054a908f488435e8c6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lifeTimeRange:
+    min: 10
+    max: 15
+  OnCreateEvent:
+    m_PersistentCalls:
+      m_Calls: []
   OnDestroyEvent:
     m_PersistentCalls:
       m_Calls: []

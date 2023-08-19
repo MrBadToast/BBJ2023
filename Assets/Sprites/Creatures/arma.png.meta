@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ff1f985743bd3d0449cf22485680c6fe
+guid: 1f7e28edee7ce48428353b1e95e76b5b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,169 +123,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chicken_0
+      name: arma_0
       rect:
         serializedVersion: 2
         x: 0
         y: 32
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.4619483, y: 0.3266531}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cb0d0e104cbbc14087b3e4067fc1d7c
-      internalID: -1665219448
+      spriteID: eb6aca94517a98a4ab2897e3fd0b1a09
+      internalID: 606710550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chicken_1
+      name: arma_1
       rect:
         serializedVersion: 2
         x: 32
         y: 32
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.4619483, y: 0.3266531}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 200b67d698572534ead5f3a62e8897e1
-      internalID: 1311510247
+      spriteID: e7e7cceefe930234e985230d2fe33550
+      internalID: 1097074333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chicken_2
+      name: arma_2
       rect:
         serializedVersion: 2
         x: 64
         y: 32
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.4619483, y: 0.3266531}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3604b4b7838382e47bbdb08cfbd51d66
-      internalID: -1888608501
+      spriteID: ac6a99f025dca8c48b3fddb2a828adf3
+      internalID: -1220569918
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chicken_3
+      name: arma_3
       rect:
         serializedVersion: 2
         x: 96
         y: 32
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.4619483, y: 0.3266531}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06894037a57e0fa45b7e00a749223557
-      internalID: -41640433
+      spriteID: b5cff84bc96bca247b0f37a3d63036b0
+      internalID: 2122114621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chicken_4
+      name: arma_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.4619483, y: 0.3266531}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f4e4dde58984b44a87ec214a0f7abd6
-      internalID: 1108223878
+      spriteID: 28206e177015f7845acfc95f09290db6
+      internalID: 1777365180
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chicken_5
+      name: arma_5
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.4619483, y: 0.3266531}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cded8b9d4ea62eb4cb5d8c7fee7586e6
-      internalID: 305431658
+      spriteID: 783c7c7344bc410438b58d7c6e4bc028
+      internalID: 1682325430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chicken_6
+      name: arma_6
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.4619483, y: 0.3266531}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d89bf91322b78a448947a0ab0e7ca251
-      internalID: -1908764341
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chicken_7
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d048cfe4b3ad534428277e966ee9a31c
-      internalID: -1016483154
+      spriteID: 29c7ff1d9c64f384abda41ab837c21b6
+      internalID: 509202913
       vertices: []
       indices: 
       edges: []
@@ -293,7 +272,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8a030265a40c83e4997a6322ef3da121
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -301,14 +280,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      chicken_0: -1665219448
-      chicken_1: 1311510247
-      chicken_2: -1888608501
-      chicken_3: -41640433
-      chicken_4: 1108223878
-      chicken_5: 305431658
-      chicken_6: -1908764341
-      chicken_7: -1016483154
+      arma_0: 606710550
+      arma_1: 1097074333
+      arma_2: -1220569918
+      arma_3: 2122114621
+      arma_4: 1777365180
+      arma_5: 1682325430
+      arma_6: 509202913
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
