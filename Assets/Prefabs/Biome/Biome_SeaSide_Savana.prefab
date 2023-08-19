@@ -201,15 +201,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   creatureDataList:
-  - creatureData: {fileID: 11400000, guid: 1e126416c39a99b47b80c7cc2f5e8525, type: 2}
-    spawnArea: {fileID: 7882717043393158650}
-  - creatureData: {fileID: 11400000, guid: 7ccb77afb0bf3b44ebda086dd320dfa1, type: 2}
+  - creatureData: {fileID: 11400000, guid: fe7230cb930faca489546bd4f671c6a4, type: 2}
     spawnArea: {fileID: 822414398444635681}
-  - creatureData: {fileID: 11400000, guid: e880e48b9ca67a64fa5d02deed7f3db5, type: 2}
-    spawnArea: {fileID: 5699518681733727516}
   spawnTimeRange:
     min: 5
     max: 10
+  maxNumOfSpawnedCreature: 0
   beforeSpawnCreatureEvent:
     m_PersistentCalls:
       m_Calls: []

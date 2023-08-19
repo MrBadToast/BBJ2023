@@ -91,16 +91,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eddab1458d4a8a41897da1081d063a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  creatureDataList:
-  - creatureData: {fileID: 11400000, guid: 1e126416c39a99b47b80c7cc2f5e8525, type: 2}
-    spawnArea: {fileID: 7698721545406971266}
-  - creatureData: {fileID: 11400000, guid: 7ccb77afb0bf3b44ebda086dd320dfa1, type: 2}
-    spawnArea: {fileID: 9076611413233582047}
-  - creatureData: {fileID: 11400000, guid: e880e48b9ca67a64fa5d02deed7f3db5, type: 2}
-    spawnArea: {fileID: 5388530278464927285}
+  creatureDataList: []
   spawnTimeRange:
     min: 5
     max: 10
+  maxNumOfSpawnedCreature: 0
   beforeSpawnCreatureEvent:
     m_PersistentCalls:
       m_Calls: []
