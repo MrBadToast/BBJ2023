@@ -15,8 +15,6 @@ public class WorldController : MonoBehaviour
     private BiomeController biomeController;
 
     [SerializeField]
-    private List<MeshRenderer> surfaceMeshRendererList;
-    [SerializeField]
     private List<MeshRenderer> groundMeshRendererList;
 
     [SerializeField]
@@ -31,18 +29,13 @@ public class WorldController : MonoBehaviour
 
 
     [SerializeField]
-    private float colorSurfaceLerpTime = 1f;
-    private MaterialPropertyBlock mpbSurface;
-    [SerializeField]
     private float colorGroundLerpTime = 1f;
     private MaterialPropertyBlock mpbGround;
 
-    private Coroutine updateSurfaceColor;
     private Coroutine updateGroundColor;
 
     private void Awake()
     {
-        mpbSurface = new MaterialPropertyBlock();
         mpbGround = new MaterialPropertyBlock();
     }
 
@@ -51,7 +44,6 @@ public class WorldController : MonoBehaviour
         currentChangeBiomeTime = changeBiomeTime;
 
         changeBiomeEvent.AddListener(ChangeGroundColor);
-        changeBiomeEvent.AddListener(ChangeSurfaceColor);
     }
 
     private void Update()
@@ -120,37 +112,6 @@ public class WorldController : MonoBehaviour
             {
                 groundMeshRendererList.Add(meshRenderer);
             }
-
-            if (meshRenderer.gameObject.CompareTag("Surface"))
-            {
-                surfaceMeshRendererList.Add(meshRenderer);
-            }
-        }
-    }
-
-    public void ChangeSurfaceColor(BiomeData biomeData)
-    {
-        if (updateSurfaceColor != null)
-            StopCoroutine(updateSurfaceColor);
-
-        updateSurfaceColor = StartCoroutine(UpdateSurfaceColor(biomeData.SurfaceColor));
-    }
-
-    private IEnumerator UpdateSurfaceColor(Color color)
-    {
-        var startColor = surfaceMeshRendererList[0].sharedMaterial.GetColor("_BaseColor");
-        var lerpTime = 0f;
-        while (lerpTime < colorSurfaceLerpTime)
-        {
-            lerpTime += Time.deltaTime;
-            var lerpColor = Color.Lerp(startColor, color, lerpTime / colorSurfaceLerpTime);
-            mpbSurface.SetColor("_BaseColor", lerpColor);
-
-            foreach (var renderer in surfaceMeshRendererList)
-            {
-                renderer.SetPropertyBlock(mpbSurface);
-            }
-            yield return null;
         }
     }
 
@@ -159,18 +120,27 @@ public class WorldController : MonoBehaviour
         if (updateGroundColor != null)
             StopCoroutine(updateGroundColor);
 
-        updateGroundColor = StartCoroutine(UpdateGroundColor(biomeData.GroundColor));
+        updateGroundColor = StartCoroutine(UpdateGroundColor(biomeData));
     }
 
-    private IEnumerator UpdateGroundColor(Color color)
+    private IEnumerator UpdateGroundColor(BiomeData biomeData)
     {
-        var startColor = groundMeshRendererList[0].sharedMaterial.GetColor("_BaseColor");
+        var startWet = groundMeshRendererList[0].sharedMaterial.GetFloat("_GrassWetness");
+        var startSnow = groundMeshRendererList[0].sharedMaterial.GetFloat("_SnowAmount");
+        var startSand = groundMeshRendererList[0].sharedMaterial.GetFloat("_SandAmount");
+
+
         var lerpTime = 0f;
         while (lerpTime < colorGroundLerpTime)
         {
             lerpTime += Time.deltaTime;
-            var lerpColor = Color.Lerp(startColor, color, lerpTime / colorGroundLerpTime);
-            mpbGround.SetColor("_BaseColor", lerpColor);
+            var lerpWet = Mathf.Lerp(startWet, biomeData.WetAmount, lerpTime / colorGroundLerpTime);
+            var lerpSnow = Mathf.Lerp(startSnow, biomeData.SnowAmount, lerpTime / colorGroundLerpTime);
+            var lerpSand = Mathf.Lerp(startSand, biomeData.SandAmount, lerpTime / colorGroundLerpTime);
+
+            mpbGround.SetFloat("_GrassWetness", lerpWet);
+            mpbGround.SetFloat("_SnowAmount", lerpSnow);
+            mpbGround.SetFloat("_SandAmount", lerpSand);
 
             foreach (var renderer in groundMeshRendererList)
             {
