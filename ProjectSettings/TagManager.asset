@@ -44,3 +44,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: OverlaySprite
+    uniqueID: 3292145391
+    locked: 0
