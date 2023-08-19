@@ -25,13 +25,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133932875261127371}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7785128264576003664
 MonoBehaviour:
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 5549253774142331355}
   audioClipKey: 
-  volume: 0.5
+  volume: 1
   aliveSceneChange: 0
   autoPlay: 1
   isLoop: 0
@@ -62,7 +62,8 @@ AudioSource:
   m_GameObject: {fileID: 1133932875261127371}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 7919621075788764426, guid: 54dd44f7699ff744184a7fc084b5a34a, type: 2}
+  OutputAudioMixerGroup: {fileID: 7919621075788764426, guid: 54dd44f7699ff744184a7fc084b5a34a,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
