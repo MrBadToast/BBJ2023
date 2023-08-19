@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2097562765032599343}
   - component: {fileID: 3096340768749453087}
   - component: {fileID: 5285552934647672075}
+  - component: {fileID: 1916699997515923461}
   m_Layer: 0
   m_Name: Eagle
   m_TagString: Untagged
@@ -129,3 +130,16 @@ MonoBehaviour:
   OnDestroyEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1916699997515923461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789504407587328753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830c985b6a68b034da51a6b540f2029f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatureData: {fileID: 11400000, guid: cce1d93dcdb9e4f4cb80cad9c64372a0, type: 2}

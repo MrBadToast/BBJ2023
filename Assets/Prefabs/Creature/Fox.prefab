@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2279351212604929868}
   - component: {fileID: 5330789917268139345}
   - component: {fileID: 8514118759679491233}
+  - component: {fileID: -5796096443802264488}
   m_Layer: 0
   m_Name: Fox
   m_TagString: Untagged
@@ -129,3 +130,16 @@ MonoBehaviour:
   OnDestroyEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &-5796096443802264488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4527390123600297730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830c985b6a68b034da51a6b540f2029f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatureData: {fileID: 11400000, guid: 0748df7f49d09634d8f74423c16b90cc, type: 2}
