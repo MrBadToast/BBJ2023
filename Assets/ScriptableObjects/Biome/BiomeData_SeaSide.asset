@@ -16,8 +16,9 @@ MonoBehaviour:
   icon: {fileID: 0}
   context: 
   waterColor: {r: 1, g: 0.10744561, b: 0, a: 0.57254905}
-  surfaceColor: {r: 0, g: 0.08852029, b: 1, a: 1}
-  groundColor: {r: 0.41568628, g: 0.023529418, b: 0.34329343, a: 1}
+  wetAmount: 0.5
+  snowAmount: 0.5
+  sandAmount: 0
   useSurfaceRange: 1
   surfaceRangeType: 2
   surfaceRange:
