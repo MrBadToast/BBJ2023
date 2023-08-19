@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 225e7857c74c8e74dbd87413ae2cfc97
+guid: 2d8157a149690fc49aa7ee1ab8a2682c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,91 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arma-Sheet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5cec5b06c85d74d46aea61c510b7312d
-      internalID: -1453984062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arma-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7acac9b88263a44789c3ad29cfff958
-      internalID: 126667281
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arma-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 92803df5b881ff548bf115b208246b75
-      internalID: -665680730
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arma-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c30fb1dcdb5319f408f20d35d27efb56
-      internalID: 885747316
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arma-Sheet_4
+      name: eagle-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -221,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9885ce0e67f3db141b22062afb452267
-      internalID: -1245736031
+      spriteID: 8a9e6d6a300a9484aa8eca1e2f0ce3c5
+      internalID: 668532115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_5
+      name: eagle-Sheet_1
       rect:
         serializedVersion: 2
         x: 32
@@ -242,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c2cccbd45b2fd243b63aa1c6d28043e
-      internalID: -2143421912
+      spriteID: 0a97b7979c1d5d44c899c534f56dadf9
+      internalID: 996780762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_6
+      name: eagle-Sheet_2
       rect:
         serializedVersion: 2
         x: 64
@@ -263,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 125bb80ab106b4045b0913fa4c4746d1
-      internalID: 1273383115
+      spriteID: 71210e53b9740a240ac510ff81f4c55a
+      internalID: 1021255048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_7
+      name: eagle-Sheet_3
       rect:
         serializedVersion: 2
         x: 96
@@ -284,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 486a428651eb3ef408e773e766278ba4
-      internalID: -1388048721
+      spriteID: 9908bc9fbba21cf4bbe7b55e4d534fe0
+      internalID: -886335507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_8
+      name: eagle-Sheet_4
       rect:
         serializedVersion: 2
         x: 0
@@ -305,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd098b0e51f8dea49bee32d61a26518f
-      internalID: -1012128160
+      spriteID: be9dd5c7b1674cd48855ec4c214b65a8
+      internalID: -1198689682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_9
+      name: eagle-Sheet_5
       rect:
         serializedVersion: 2
         x: 32
@@ -326,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2d6589dbe8216641af5847b19ea919a
-      internalID: -476716252
+      spriteID: 4ed0477c46defe14ebeae86932780918
+      internalID: -1571459563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_10
+      name: eagle-Sheet_6
       rect:
         serializedVersion: 2
         x: 64
@@ -347,14 +263,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5792ae2d67fc4f40972fe580660ec0f
-      internalID: 1637346212
+      spriteID: 0bbf2f943a88cf9469bb6638a3ae617f
+      internalID: 1102428439
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_11
+      name: eagle-Sheet_7
       rect:
         serializedVersion: 2
         x: 96
@@ -368,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43989e600e944804fbe0b764fd7042b0
-      internalID: -1694904816
+      spriteID: 352a741ceff5a84418d95fbd527bb0e8
+      internalID: -1098781439
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_12
+      name: eagle-Sheet_8
       rect:
         serializedVersion: 2
         x: 128
@@ -389,14 +305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 734c94d3335a6dc46badd888b45b56c6
-      internalID: 703937693
+      spriteID: 4ea12a90bceeb1946aff02cb99063fb2
+      internalID: 835449448
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_13
+      name: eagle-Sheet_9
       rect:
         serializedVersion: 2
         x: 160
@@ -410,14 +326,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da9ab45e4c3a63c47b0a2d4b0eaf2ac9
-      internalID: -1363015578
+      spriteID: a5966eaf22e57964388b5a3cebf84e06
+      internalID: -772118551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_14
+      name: eagle-Sheet_10
       rect:
         serializedVersion: 2
         x: 192
@@ -431,14 +347,98 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 639dd57202af21c4eb97e0dd06b4af1a
-      internalID: -656101320
+      spriteID: 871bf9e2d02bd9c4f90b78eafe1d3638
+      internalID: -689577127
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_15
+      name: eagle-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d338bbbefaa4c4b86876be6aa3384c
+      internalID: 106546549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc4addda0bab25e459fb1366ede2321e
+      internalID: -1157678069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea50a4c3e14ec14f887d628a3b2dc0b
+      internalID: -1003485064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d578c01049d5d34593e6d4b7d86992e
+      internalID: -411450005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle-Sheet_15
       rect:
         serializedVersion: 2
         x: 0
@@ -452,14 +452,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b32ec5cebc3e014469a9a6e9b54aa8f0
-      internalID: -1117965487
+      spriteID: 0d057ca037507b649918868ffa61e855
+      internalID: 636428713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_16
+      name: eagle-Sheet_16
       rect:
         serializedVersion: 2
         x: 32
@@ -473,14 +473,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a45d3205be1425d4eb1b995b3140c57f
-      internalID: -840266052
+      spriteID: 0686c10a00315494abb90d5b7b6451eb
+      internalID: -1322150491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arma-Sheet_17
+      name: eagle-Sheet_17
       rect:
         serializedVersion: 2
         x: 64
@@ -494,29 +494,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ce9bc4cf302a224f8e3c5b1000fca28
-      internalID: 1400705685
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arma-Sheet_18
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 854c16aad95c9cc43aaa48fe2d55a96f
-      internalID: -853207480
+      spriteID: f761d45d9fa076645b7adeb11cf22c9c
+      internalID: 1260792458
       vertices: []
       indices: 
       edges: []
@@ -524,7 +503,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a162f91d4ef81c34385e605adb780048
+    spriteID: 0bba7baf26e300c4e962940545f8369c
     internalID: 0
     vertices: []
     indices: 
@@ -532,25 +511,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      arma-Sheet_0: -1453984062
-      arma-Sheet_1: 126667281
-      arma-Sheet_10: 1637346212
-      arma-Sheet_11: -1694904816
-      arma-Sheet_12: 703937693
-      arma-Sheet_13: -1363015578
-      arma-Sheet_14: -656101320
-      arma-Sheet_15: -1117965487
-      arma-Sheet_16: -840266052
-      arma-Sheet_17: 1400705685
-      arma-Sheet_18: -853207480
-      arma-Sheet_2: -665680730
-      arma-Sheet_3: 885747316
-      arma-Sheet_4: -1245736031
-      arma-Sheet_5: -2143421912
-      arma-Sheet_6: 1273383115
-      arma-Sheet_7: -1388048721
-      arma-Sheet_8: -1012128160
-      arma-Sheet_9: -476716252
+      eagle-Sheet_0: 668532115
+      eagle-Sheet_1: 996780762
+      eagle-Sheet_10: -689577127
+      eagle-Sheet_11: 106546549
+      eagle-Sheet_12: -1157678069
+      eagle-Sheet_13: -1003485064
+      eagle-Sheet_14: -411450005
+      eagle-Sheet_15: 636428713
+      eagle-Sheet_16: -1322150491
+      eagle-Sheet_17: 1260792458
+      eagle-Sheet_2: 1021255048
+      eagle-Sheet_3: -886335507
+      eagle-Sheet_4: -1198689682
+      eagle-Sheet_5: -1571459563
+      eagle-Sheet_6: 1102428439
+      eagle-Sheet_7: -1098781439
+      eagle-Sheet_8: 835449448
+      eagle-Sheet_9: -772118551
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

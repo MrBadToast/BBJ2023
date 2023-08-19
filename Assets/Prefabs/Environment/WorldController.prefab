@@ -88,6 +88,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   colorGroundLerpTime: 1
+  waterLevelLerpTime: 1
 --- !u!1 &7774409221284250205
 GameObject:
   m_ObjectHideFlags: 0
@@ -118,7 +119,7 @@ Transform:
   m_LocalScale: {x: 1, y: 0, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1086980632234028499}
+  - {fileID: 621217873141205561}
   m_Father: {fileID: 3590234458121720338}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8145579710846789030
@@ -133,12 +134,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 691937495d4225a4da9595b4226a50c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meshRenderer: {fileID: 1086980632234028500}
-  heightRange:
+  meshRenderer: {fileID: 1789106087529247062}
+  heightScaleRange:
     min: 0
     max: 1
+  heightYRange:
+    min: -1.5
+    max: 2.9
   heightLerpTime: 1
   colorLerpTime: 1
+  updateHeightY:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6216584200098021747}
+        m_TargetAssemblyTypeName: WorldController, Assembly-CSharp
+        m_MethodName: ChangeWaterLevel
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1086980632234028498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -232,13 +251,13 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c8218faf0c207248a6df08479b65508, type: 3}
---- !u!4 &1086980632234028499 stripped
+--- !u!4 &621217873141205561 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8c8218faf0c207248a6df08479b65508,
     type: 3}
   m_PrefabInstance: {fileID: 1086980632234028498}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &1086980632234028500 stripped
+--- !u!23 &1789106087529247062 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 8c8218faf0c207248a6df08479b65508,
     type: 3}

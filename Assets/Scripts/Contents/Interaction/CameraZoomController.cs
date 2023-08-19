@@ -8,7 +8,6 @@ namespace _Cinemachince
 {
     public class CameraZoomController : MonoBehaviour
     {
-        [SerializeField]
         private CinemachineFreeLook _cinemachineFreeLook;
 
         [SerializeField]
