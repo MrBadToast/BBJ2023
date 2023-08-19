@@ -18,7 +18,7 @@ MonoBehaviour:
       values:
       - type: 100
         name: Surface
-        amount: 0
+        amount: 0.2
         percent: 0
         isClamp: 0
         clampRange:
@@ -26,7 +26,7 @@ MonoBehaviour:
           max: 0
       - type: 101
         name: Humidity
-        amount: 0.2
+        amount: 0
         percent: 0
         isClamp: 0
         clampRange:
@@ -46,7 +46,7 @@ MonoBehaviour:
       values:
       - type: 100
         name: Surface
-        amount: 0.1
+        amount: 0
         percent: 0
         isClamp: 0
         clampRange:
@@ -54,7 +54,7 @@ MonoBehaviour:
           max: 0
       - type: 101
         name: Humidity
-        amount: 0
+        amount: 0.05
         percent: 0
         isClamp: 0
         clampRange:
