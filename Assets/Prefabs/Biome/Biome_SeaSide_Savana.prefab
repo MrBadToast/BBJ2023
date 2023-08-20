@@ -208,6 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d69a8a0b8a6618498c72bae603b90b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  biomeData: {fileID: 11400000, guid: aa17ac8133cae55448192c1a93cf52d3, type: 2}
   showTime: 1
   beginShowEvent:
     m_PersistentCalls:
@@ -246,6 +247,8 @@ MonoBehaviour:
   endHideEvent:
     m_PersistentCalls:
       m_Calls: []
+  biomeAlerterPrefab: {fileID: 2524801059983792778, guid: 2e261a6cf0670d7478200cdef1fe8b32,
+    type: 3}
 --- !u!1 &8665858519726600774
 GameObject:
   m_ObjectHideFlags: 0
