@@ -28,9 +28,7 @@ public class BiomeController : MonoBehaviour
         Debug.Log($"Show Biome => {this.gameObject.name}");
 
         var biomeAlerter = UIController.Instance.CreateWorldUI(biomeAlerterPrefab).GetComponent<UIBiomeAlerter>();
-        biomeAlerter.Init(new UIBiomeAlertData() { 
-            alertMessage = $"{biomeData.BiomeName} 에 도달했습니다."
-        });
+        biomeAlerter.SetMessage($"{biomeData.BiomeName} 에 도달했습니다.");
 
         if (waitForEventCoroutine != null)
             StopCoroutine(waitForEventCoroutine);
