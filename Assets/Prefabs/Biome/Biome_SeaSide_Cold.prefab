@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43c0a6a7ba761f94bbff4171a1ab7dd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnAreaSize: {x: 3, y: 1.5, z: 3}
+  spawnAreaSize: {x: 2.9, y: 1.5, z: 2.9}
   useSnapFloor: 0
   areaColor: {r: 1, g: 0, b: 0.6308284, a: 0.39215687}
 --- !u!1 &2751024190521976172
@@ -94,6 +94,69 @@ MonoBehaviour:
   spawnAreaSize: {x: 3, y: 1.5, z: 1}
   useSnapFloor: 0
   areaColor: {r: 0, g: 0.37633944, b: 1, a: 0.39215687}
+--- !u!1 &2835370322497186426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6999603991504909199}
+  - component: {fileID: 5163420460968093688}
+  m_Layer: 0
+  m_Name: NaturalSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6999603991504909199
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2835370322497186426}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2364430889481909759}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5163420460968093688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2835370322497186426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eddab1458d4a8a41897da1081d063a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatureDataList:
+  - creatureData: {fileID: 11400000, guid: 1324637cda899ae4f8fc5e7de37b030b, type: 2}
+    spawnArea: {fileID: 8083543346586292834}
+  - creatureData: {fileID: 11400000, guid: 8154ecb822b38f2458b841918a27c35c, type: 2}
+    spawnArea: {fileID: 8083543346586292834}
+  spawnTimeRange:
+    min: 3
+    max: 5
+  maxNumOfSpawnedCreature: 30
+  beforeSpawnCreatureEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  AfterSpawnCreatureEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  spawnEffect: {fileID: 3405140234659635900, guid: 5a931b1618b057a439b726be93d101d1,
+    type: 3}
+  destorySFXPlayer: {fileID: 1133932875261127371, guid: 251d5f14b63a8d548a3926cffc3e698a,
+    type: 3}
 --- !u!1 &3807044061734079778
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,7 +183,7 @@ Transform:
   m_GameObject: {fileID: 3807044061734079778}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.815, z: 0}
+  m_LocalPosition: {x: 0, y: 0.815, z: 0.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -138,7 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43c0a6a7ba761f94bbff4171a1ab7dd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnAreaSize: {x: 3, y: 0.5, z: 3}
+  spawnAreaSize: {x: 2.9, y: 0.5, z: 2.5}
   useSnapFloor: 1
   areaColor: {r: 0.25289202, g: 1, b: 0, a: 0.39215687}
 --- !u!1 &4218237080675743852
@@ -192,10 +255,6 @@ MonoBehaviour:
     spawnArea: {fileID: 8083543346586292834}
   - creatureData: {fileID: 11400000, guid: cce1d93dcdb9e4f4cb80cad9c64372a0, type: 2}
     spawnArea: {fileID: 5692012996124059599}
-  - creatureData: {fileID: 11400000, guid: 1324637cda899ae4f8fc5e7de37b030b, type: 2}
-    spawnArea: {fileID: 8083543346586292834}
-  - creatureData: {fileID: 11400000, guid: 8154ecb822b38f2458b841918a27c35c, type: 2}
-    spawnArea: {fileID: 8083543346586292834}
   spawnTimeRange:
     min: 5
     max: 7
@@ -241,6 +300,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5743539883499266287}
+  - {fileID: 6999603991504909199}
   - {fileID: 8132050696532111575}
   - {fileID: 8148867879485736475}
   - {fileID: 8693576093067016337}
