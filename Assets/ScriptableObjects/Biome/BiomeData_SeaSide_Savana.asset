@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad675e621ed62f646b8d32c27bc52782, type: 3}
   m_Name: BiomeData_SeaSide_Savana
   m_EditorClassIdentifier: 
-  order: 0
+  order: 1
   key: SeaSide_Savana
+  biomeName: 
   icon: {fileID: 0}
   context: 
   waterColor: {r: 0.37735847, g: 0.9433962, b: 0.82714623, a: 0.49019608}

@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad675e621ed62f646b8d32c27bc52782, type: 3}
   m_Name: BiomeData_SeaSide_Freeze
   m_EditorClassIdentifier: 
-  order: 0
+  order: 1
   key: SeaSide_Freeze
+  biomeName: 
   icon: {fileID: 0}
   context: 
   waterColor: {r: 0.5647059, g: 0.7823753, b: 0.94509804, a: 0.8235294}

@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad675e621ed62f646b8d32c27bc52782, type: 3}
   m_Name: BiomeData_Ocean
   m_EditorClassIdentifier: 
-  order: 8
+  order: 2
   key: Ocean
+  biomeName: 
   icon: {fileID: 0}
   context: 
   waterColor: {r: 0, g: 0.39022684, b: 1, a: 0.49019608}
