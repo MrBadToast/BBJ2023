@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   order: 1
   key: SeaSide_Savana
-  biomeName: 
+  biomeName: "\uC0AC\uBC14\uB098"
   icon: {fileID: 0}
   context: 
   waterColor: {r: 0.37735847, g: 0.9433962, b: 0.82714623, a: 0.49019608}

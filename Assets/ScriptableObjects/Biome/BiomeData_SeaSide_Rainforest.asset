@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   order: 2
   key: SeaSide_Rainforest
-  biomeName: 
+  biomeName: "\uC6B0\uB9BC"
   icon: {fileID: 0}
   context: 
   waterColor: {r: 0.1425418, g: 0.6075444, b: 0.9811321, a: 0.49019608}

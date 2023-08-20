@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   order: 3
   key: Default
-  biomeName: 
+  biomeName: "\uAC74\uC870"
   icon: {fileID: 0}
   context: 
   waterColor: {r: 0, g: 0.78048754, b: 1, a: 0.49803922}

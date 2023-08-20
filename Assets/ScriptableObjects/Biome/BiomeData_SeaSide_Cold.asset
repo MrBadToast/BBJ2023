@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   order: 1
   key: SeaSide_Cold
-  biomeName: 
+  biomeName: "\uB0C9\uB300"
   icon: {fileID: 0}
   context: 
   waterColor: {r: 0.2235294, g: 0.58330023, b: 1, a: 0.7058824}
