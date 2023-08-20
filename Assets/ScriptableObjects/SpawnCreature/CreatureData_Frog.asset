@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: Frog
   creatureName: "\uAC1C\uAD6C\uB9AC"
-  icon: {fileID: 1030645429, guid: de2f968783010de41b3e2a8434fe1951, type: 3}
-  context: 
+  icon: {fileID: 21300000, guid: 1303afee4d9bb9a4b81b1e838bdf1aca, type: 3}
+  context: "\uAC1C\uAD6C\uB9AC \uC18C\uB144~ \uBE70\uBE60\uBC24~"
   creaturePrefab: {fileID: 2680905090311810747, guid: de042da776b3dc44898e8ad1d99ead56,
     type: 3}
   spawnProbability: 0

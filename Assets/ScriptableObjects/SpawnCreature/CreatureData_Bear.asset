@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: Bear
   creatureName: "\uBD88\uACF0"
-  icon: {fileID: 1529154073, guid: 3a1e03ce0e62e0f4da2e9cfb75f5e1ae, type: 3}
-  context: "\uACF0\uC740 \uC0AC\uB78C\uC744 \uCC22\uC5B4"
+  icon: {fileID: 21300000, guid: 1454d58637d0e364bb14b3057dc1aa15, type: 3}
+  context: "\uACF0\uC740 \uC0AC\uB78C\uC744 \uCC22\uC5B4."
   creaturePrefab: {fileID: 558857705754445637, guid: de803e8bf1fbd6448af5ab0688f4215a,
     type: 3}
   spawnProbability: 0

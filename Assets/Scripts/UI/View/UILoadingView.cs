@@ -28,6 +28,10 @@ public class UILoadingView : UIBaseView
     public override void Open()
     {
         gameObject.SetActive(true);
+        foreach (var animator in openAnimatorElementList)
+        {
+            animator.tweenAnimator.PlayAnimation(animator.tweenKey);
+        }
         loadingText.SetText(loadingTipData.GetRandomData());
         StartCoroutine(CoWaitForViewTime());
     }

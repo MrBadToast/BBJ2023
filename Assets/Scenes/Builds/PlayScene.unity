@@ -133,6 +133,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1789106087529247062, guid: 92805656800a4bc4e89ee837ae21e648,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3da1792bf27a1584da37e5d0c1fd30d3, type: 2}
     - target: {fileID: 2317390839350567394, guid: 92805656800a4bc4e89ee837ae21e648,
         type: 3}
       propertyPath: m_CastShadows
@@ -203,6 +208,11 @@ PrefabInstance:
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7436810991862508407, guid: 92805656800a4bc4e89ee837ae21e648,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a7b33b390d6c45140a1f98af0668e0b6, type: 2}
     - target: {fileID: 8872478651236590719, guid: 92805656800a4bc4e89ee837ae21e648,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -516,7 +526,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237427648}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.33100694, y: -0.000000016236429, z: 0.0000000056954317, w: 0.9436283}
+  m_LocalRotation: {x: 0.33100694, y: 0.000000016236429, z: -0.0000000056954317, w: 0.9436283}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

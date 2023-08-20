@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: Whale
   creatureName: "\uD639\uB4F1\uACE0\uB798"
-  icon: {fileID: 1133953825, guid: 5241f41e75287bf4daae5bcd389c0309, type: 3}
+  icon: {fileID: 21300000, guid: 37c8809c13b1cd3469109c6cb726451a, type: 3}
   context: "\uC9C0\uAD6C\uC0C1\uC5D0\uC11C \uAC00\uC7A5 \uD06C\uACE0 \uADFC\uBA74\uD55C
-    \uC5EC\uD589\uC790 \uC785\uB2C8\uB2E4"
-  creaturePrefab: {fileID: 0}
+    \uC5EC\uD589\uC790 \uC785\uB2C8\uB2E4."
+  creaturePrefab: {fileID: 4395625764791008847, guid: 2c8f2afcedeb73e44828b049d913e895,
+    type: 3}
   spawnProbability: 0
