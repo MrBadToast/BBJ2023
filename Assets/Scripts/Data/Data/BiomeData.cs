@@ -26,6 +26,10 @@ public class BiomeData : ScriptableObject
     public string Key => key;
 
     [SerializeField]
+    private string biomeName;
+    public string BiomeName => biomeName;
+
+    [SerializeField]
     private Sprite icon;
     public string Icon => Icon;
 
