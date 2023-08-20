@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad675e621ed62f646b8d32c27bc52782, type: 3}
   m_Name: BiomeData_Ocean_Coral
   m_EditorClassIdentifier: 
-  order: 0
+  order: 1
   key: Ocean_Coral
   biomeName: "\uC0B0\uD638\uCD08"
   icon: {fileID: 0}

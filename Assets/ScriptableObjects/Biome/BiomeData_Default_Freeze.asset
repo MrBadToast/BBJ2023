@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad675e621ed62f646b8d32c27bc52782, type: 3}
   m_Name: BiomeData_Default_Freeze
   m_EditorClassIdentifier: 
-  order: 0
+  order: 1
   key: Default_Freeze
   biomeName: "\uD55C\uB300 \uAC74\uC870"
   icon: {fileID: 0}
